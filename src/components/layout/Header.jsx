@@ -65,9 +65,9 @@ const Header = () => {
 
         {/* Action Button */}
         <div style={{ display: 'none', alignItems: 'center', gap: '1rem' }} className="desktop-actions">
-           <a href="tel:0912345678" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
+           <a href="tel:0343673555" style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontWeight: 'bold' }}>
              <Phone size={18} fill="currentColor" />
-             0912.345.678
+             0343.673.555
            </a>
            <Link to="/lien-he" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem' }}>
              Tư Vấn Ngay

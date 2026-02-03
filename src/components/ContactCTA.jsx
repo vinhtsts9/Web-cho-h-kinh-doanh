@@ -31,7 +31,7 @@ const ContactCTA = () => {
               Để lại thông tin để được tư vấn miễn phí giải pháp phù hợp nhất cho mô hình của bạn.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'center' }}>
-              <p style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>Hotline: 0912.345.678</p>
+              <p style={{ fontWeight: 'bold', fontSize: '1.1rem' }}>Hotline: 0343.673.555</p>
               <p>Email: hotro@webhokinhdoanh.vn</p>
             </div>
           </div>

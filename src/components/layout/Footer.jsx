@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <Phone size={20} color="var(--primary-color)" />
-                <a href="tel:0912345678" style={{ fontWeight: '600', color: 'white' }}>0912.345.678</a>
+                <a href="tel:0343673555" style={{ fontWeight: '600', color: 'white' }}>0343.673.555</a>
               </div>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <Mail size={20} color="var(--primary-color)" />

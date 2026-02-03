@@ -14,7 +14,7 @@ const FloatingContact = () => {
     }}>
       {/* Zalo Button */}
       <a 
-        href="https://zalo.me/0912345678" 
+        href="https://zalo.me/0343673555" 
         target="_blank" 
         rel="noopener noreferrer"
         style={{
@@ -38,7 +38,7 @@ const FloatingContact = () => {
 
       {/* Phone Button */}
       <a 
-        href="tel:0912345678" 
+        href="tel:0343673555" 
         style={{
           width: '50px',
           height: '50px',
