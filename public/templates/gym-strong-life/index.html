@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gym Strong Life - District 7, HCMC</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec1313",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#221010",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Lexend', sans-serif; }
+        .bg-noise {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+        }
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-display">
+<!-- Header / Navigation -->
+<header class="fixed top-0 w-full z-50 bg-background-dark/80 backdrop-blur-md border-b border-white/10">
+<div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary flex items-center justify-center rounded-lg">
+<span class="material-icons text-white">fitness_center</span>
+</div>
+<span class="text-xl font-bold tracking-tighter uppercase text-white">Strong <span class="text-primary">Life</span></span>
+</div>
+<nav class="hidden md:flex items-center gap-8 text-sm font-medium text-white/80 uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#about">Về Chúng Tôi</a>
+<a class="hover:text-primary transition-colors" href="#plans">Bảng Giá</a>
+<a class="hover:text-primary transition-colors" href="#gallery">Tiện Ích</a>
+<a class="bg-primary text-white px-5 py-2 rounded-lg font-bold hover:scale-105 transition-transform" href="#booking">Tập Thử Ngay</a>
+</nav>
+<div class="md:hidden flex items-center">
+<span class="material-icons text-white">menu</span>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+<div class="absolute inset-0 bg-black">
+<img class="w-full h-full object-cover opacity-40" data-alt="Interior of a modern high-end gym with red lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASlqM6LxzvKkwfnCaHc7kAUNs4Ji8dZCqGogx9XaNPqrE8mpNWlLlf-R1p7Bgew7IUACqXHVMNquSPke2gbOCD9y0iUukOwl5_AA0XIuNZB4uGm3r9fBbVJ3ILO62AhgH4t8JL2n-v4FLycJ3pKWsESsn5R25Q_fuOMLPRO8LOc_66nHnvIqU0oxv-hqZ0sJOBQrX2lI47nuiyqBKeecduKOeUlOSiK5TGwQkMsg4OIdJEqmyBXlQD7qvYvEX9IYxKLlDpTPt3Ftzg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 text-center md:text-left grid md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block px-4 py-1 bg-primary text-white text-xs font-bold uppercase rounded-full mb-6 tracking-widest">Boutique Gym Quận 7</span>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6 uppercase">Gym Strong Life - <span class="text-primary">Phòng gym nhỏ, hiệu quả lớn</span></h1>
+<p class="text-xl text-slate-300 mb-8 max-w-xl">Cá nhân hóa lịch trình tập luyện cùng Coach Hoang và đội ngũ chuyên gia để đạt mục tiêu hình thể nhanh nhất, bền vững nhất.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary hover:bg-red-700 text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg shadow-primary/30 transition-all flex items-center justify-center gap-2" href="#booking">
+                        Đăng ký tập thử MIỄN PHÍ <span class="material-icons">bolt</span>
+</a>
+<a class="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-lg font-bold px-8 py-4 rounded-xl backdrop-blur-sm transition-all flex items-center justify-center gap-2" href="tel:0901234567">
+                        Gọi tư vấn <span class="material-icons">phone_in_talk</span>
+</a>
+</div>
+</div>
+<div class="hidden md:block relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/20 blur-3xl rounded-full"></div>
+<img class="rounded-2xl border-2 border-white/10 relative z-10 shadow-2xl" data-alt="Personal trainer assisting client with heavy lift" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdAgXC4MQHzhZb43CVynO-xKi14EOk4gMhsVELH3WDtrdnt3wJYW4beIBs1fBxIf7TD-bY67bY_4YbzaPBBg5CQi6IwzAhQfdhwfoX5R2K5nvAtkTI6yNC1m5RTz3k1VDrDGOzUwz3UqPemhEhPLrzCsTlpmLVZPDEvgh-UPZBDMAHPXc_qVJZ7HdzV0UbGFK8bjkYFxD27drIGt4LkzXLGjriHT1MBbmVBBPOxxxIcqQvkanp_tUgylY0045iFfUHL9nkimeSlzMw"/>
+</div>
+</div>
+</section>
+<!-- Pain Points Section -->
+<section class="py-24 bg-background-dark relative">
+<div class="bg-noise absolute inset-0 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 relative z-10">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-white uppercase tracking-tight mb-4">Bạn đang gặp khó khăn gì?</h2>
+<div class="w-20 h-1.5 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">groups</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase">Phòng Gym Quá Đông</h3>
+<p class="text-slate-400">Bạn mệt mỏi vì phải chờ máy tập hàng giờ? Strong Life giới hạn số người tập để đảm bảo sự riêng tư.</p>
+</div>
+<div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">help_outline</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase">Thiếu Định Hướng</h3>
+<p class="text-slate-400">Vào gym nhưng không biết bắt đầu từ đâu? Coach sẽ giúp bạn xây dựng lộ trình chuyên biệt từ con số 0.</p>
+</div>
+<div class="bg-white/5 p-8 rounded-xl border border-white/10 hover:border-primary/50 transition-all group">
+<div class="w-14 h-14 bg-primary/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+<span class="material-icons text-primary group-hover:text-white text-3xl">trending_down</span>
+</div>
+<h3 class="text-xl font-bold text-white mb-4 uppercase">Tập Hoài Không Giảm</h3>
+<p class="text-slate-400">Bạn nỗ lực nhưng cân nặng vẫn đứng yên? Chúng tôi tối ưu hóa dinh dưỡng và bài tập để đốt mỡ tối đa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About / Coach Section -->
+<section class="py-24 bg-white dark:bg-[#1a0c0c]" id="about">
+<div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-1/2 relative">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Professional fitness coach showing muscular definition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCpxwQYRg9jJZdgIazBx4c-7tMt9e01QOR7ELDM5oV9leRKklsWU8rL4x154lm8UktTfVDDaTT_G-VYbMLHJeTcQd1J2EBviQoykPfLz614TO2hzf9BmBUDeFMqfYXTbeDuos8FRpT9euGURo7HbFKuTqRH-mXpZzJCPA-1XJcNNWMeaMHfdpqbdaCKhqt7Y-sB1ZgVfRg9MjY3mAjNobN2GyLmLfY0huuZM71gMRWbO89qvjfn22bJKeg_vbRfvAgBF8iUoehXBUUT"/>
+</div>
+<div class="absolute -bottom-8 -right-8 bg-primary p-8 rounded-xl text-white shadow-xl hidden lg:block">
+<p class="text-4xl font-extrabold mb-1">08+</p>
+<p class="text-sm uppercase tracking-widest font-bold">Năm Kinh Nghiệm</p>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 dark:text-white mb-6 uppercase leading-tight">8 năm giúp bạn đạt mục tiêu thể hình</h2>
+<p class="text-lg text-slate-600 dark:text-slate-400 mb-6 italic">"Strong Life không chỉ là một phòng gym, đó là nơi tôi và các cộng sự tâm huyết nhất truyền động lực thay đổi lối sống cho hàng nghìn học viên tại Quận 7."</p>
+<div class="space-y-4 mb-8">
+<div class="flex items-center gap-4">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold text-slate-700 dark:text-slate-200 uppercase">Coach Hoàng: Cựu VĐV Thể Hình Chuyên Nghiệp</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold text-slate-700 dark:text-slate-200 uppercase">Hơn 1000+ ca giảm cân thành công</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold text-slate-700 dark:text-slate-200 uppercase">Chứng chỉ NASM, ACE International</span>
+</div>
+</div>
+<p class="text-slate-600 dark:text-slate-400 mb-8">Chúng tôi hiểu rằng mỗi cơ thể là một bản thể riêng biệt. Phương pháp huấn luyện của chúng tôi kết hợp giữa khoa học vận động hiện đại và thực đơn dinh dưỡng cá nhân hóa.</p>
+<a class="inline-flex items-center gap-2 text-primary font-bold uppercase tracking-widest border-b-2 border-primary pb-2 hover:gap-4 transition-all" href="#booking">
+                    Tìm hiểu lộ trình của bạn <span class="material-icons">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-background-dark" id="gallery">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+<div>
+<h2 class="text-3xl md:text-4xl font-extrabold text-white uppercase mb-4">Cơ sở vật chất hiện đại</h2>
+<p class="text-slate-400 max-w-lg">Phòng tập được thiết kế tối ưu với thiết bị nhập khẩu 100%, không gian sạch sẽ và đầy đủ tiện ích chuẩn boutique.</p>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10">
+<span class="material-icons text-primary text-sm">ac_unit</span>
+<span class="text-white text-xs font-bold uppercase">Full AC 24/7</span>
+</div>
+<div class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-lg border border-white/10">
+<span class="material-icons text-primary text-sm">shower</span>
+<span class="text-white text-xs font-bold uppercase">Shower &amp; Locker</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
+<div class="col-span-2 row-span-2 relative group overflow-hidden rounded-2xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Main workout area with heavy weights and racks" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlQdkdCEGdDKp1zwDp5iK_SZ73PqtX2vxuJWqwCJLv7IeJ_53nhmXW1lIaZ1TKAcbiFixS7pG0TustMQiS6xMPEUia2efiMXa1FsBv3OO5ZqSKeIAa7kozxeuF8X5KXoIRVfjI_wi7KZE45uDZIBSttkAp_Sl19noMuSe7Oyt3aah71KCjMRDoLCjnCI0wWnQicBIjw1cXXymgJjzSmzBWJ9kVo7oDAk4GT86ESSKbDQoajpgGImvMLv_j4_abL7tJQAefFuhrzQGj"/>
+<div class="absolute bottom-6 left-6 z-10">
+<span class="bg-primary px-3 py-1 text-[10px] font-black text-white uppercase rounded">Weight Zone</span>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-2xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Treadmills and cardio machines lined up" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtScfelkWu2pOT9cH-62YJRIatnYMlAnwHvZ5rrVmg_zr6eIQF4ZXxThKixCuKis86D4RxspJNG-lTUdp7Bz2ycS7H4klOMipAyoByxipcnT3_XsZJ7RcezJwCa9XFTAZF2TBcUHn0xbaDhmGALTWHhYxSwVMmMv9nwwG-6kGWyH9F_hDhIcC9EkdEB3XjdMj-DQwwK8UV_LjW_5Fpj9X8JnGosmJFg29BdfqIR7Hnk-P6dxzTTdcc0PDmIPz78Tyo8SIEoy8urH5u"/>
+<div class="absolute bottom-4 left-4 z-10">
+<span class="bg-primary px-3 py-1 text-[10px] font-black text-white uppercase rounded">Cardio</span>
+</div>
+</div>
+<div class="relative group overflow-hidden rounded-2xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern gym lighting and mirrors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASfLT5YPT16bUR8WYEWXm_bP8uJf3wlru1ReKvNvghzttC8L4zsOuztgP_dJQwjUk7TKGKTZ6sip40UBG5gW69_jKyjMq_71-VGrA47ICHVvJmNfNWDcexYSHNI2geA4yiyVBwxH2p7ianYUqPJWg23KLHNms8dyuUyxNs-QqiHJgua4dHbQvT1U9CwUSxbyve0AP2xkNxplEH36IFEelkzYcSxlF9NyGzxLGvSxHODE0HVzG7OdNj2eBSKD2a6jTgDWBfpO_TCwkK"/>
+<div class="absolute bottom-4 left-4 z-10">
+<span class="bg-primary px-3 py-1 text-[10px] font-black text-white uppercase rounded">Modern Gear</span>
+</div>
+</div>
+<div class="col-span-2 relative group overflow-hidden rounded-2xl">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Yoga and stretching area with mats" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOutb0O6_DGD8cEhibv6ROKQDFcZKZPb0bCH3ULJVSPUhDGlt9CodSDX-FMLbz9vbSOu3qSWBQxmyeHdTzgnMZMshCfbVWIb2jmpR_eWe0fNB5hsgC0OS_ykhpZN268Kb1rsVsIVUo56XHqBlqI7t5GPjDdTBJU_39dh12klOIwkkgTuo4VQBGgPkMJBg-swyP9fbrt-qUxwfepySv6vqJ1Z72k2vEYdYsdu2sLe_1S1z2TWOlO5IzxwW52kZVGn5GxMl_bUs_goiQ"/>
+<div class="absolute bottom-4 left-4 z-10">
+<span class="bg-primary px-3 py-1 text-[10px] font-black text-white uppercase rounded">Group Class</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Membership Plans -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="plans">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white uppercase tracking-tight mb-4">Gói Hội Viên Linh Hoạt</h2>
+<div class="w-20 h-1.5 bg-primary mx-auto mb-6"></div>
+<p class="text-slate-600 dark:text-slate-400">Không phí ẩn, không hợp đồng dài hạn ràng buộc.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Plan 1 -->
+<div class="bg-white dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-2xl transition-all group flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" data-alt="Member before and after physique comparison" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsJA_O94g8hiMylJHCOie5L36U2xf0fQmjDMMNb_xBdO3japJeKt0Um9GhFAqBN-SVKQJ6GJ-8XDuq2sGFLS82EKPruuaPb8KeUOIUftVciMr16xQw7QgC5Lxx7ddtBcSVZq94Dvkn5b_is0o_fmnlGI9NIHZlTMmkfTFJ8lVxgXW1POucB9qB-GJetR2kbPHO1dKwRdwXWI86CnMK0Jg5zZtMfX74pTR8gr-w7jBrJYS1HOOF6MwmgjkBHWdLL9np8FCHaBpPHZ7B"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-2xl font-black text-white uppercase italic">Tập Tự Do</h3>
+</div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="mb-6">
+<span class="text-4xl font-extrabold text-primary">500k</span>
+<span class="text-slate-500 dark:text-slate-400">/tháng</span>
+</div>
+<ul class="space-y-4 mb-8 text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Toàn quyền sử dụng thiết bị</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Giờ tập linh hoạt 24/7</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Miễn phí Locker &amp; Shower</li>
+</ul>
+<a class="mt-auto block text-center py-3 border-2 border-primary text-primary font-bold uppercase rounded-lg group-hover:bg-primary group-hover:text-white transition-all" href="#booking">Đăng Ký Ngay</a>
+</div>
+</div>
+<!-- Plan 2 (Featured) -->
+<div class="bg-white dark:bg-white/5 rounded-2xl border-2 border-primary overflow-hidden shadow-2xl shadow-primary/20 scale-105 relative z-10 flex flex-col">
+<div class="absolute top-4 right-4 bg-primary text-white text-[10px] font-black uppercase px-3 py-1 rounded tracking-tighter z-20">Phổ biến nhất</div>
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Before and after weight loss transformation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB51LsSYps70yExSqJbVYgcBo2h30V7WrRmzbsrqArh6b4EUztq-7d-K5RBwVlcH8GZMm5Muap6b9R8nVMI02Wk_y1VYxDkmoX1_93_uhqeIWEaEj0glRq_nzQqo3GOpr4grdhdfm1vivP1K0GAKln6uujKkkLDRBhWfChIuNdEqdaJHpcRJMBkc7-rp-oHUimeZ_IwJ2yVFXSbum7TBUvfbAbq_zWeRhBfFJFoMZA1JzMNJDF_m255zS06BaFpfJuMhM1BN5nZgM_"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-2xl font-black text-white uppercase italic">PT 1-1 Chuyên Nghiệp</h3>
+</div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="mb-6">
+<span class="text-4xl font-extrabold text-primary">1.2M</span>
+<span class="text-slate-500 dark:text-slate-400">/tháng (8 buổi)</span>
+</div>
+<ul class="space-y-4 mb-8 text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-3 font-bold"><span class="material-icons text-primary text-sm">star</span> Huấn luyện viên cá nhân</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Thiết kế giáo án riêng biệt</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Tư vấn dinh dưỡng hàng tuần</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Cam kết kết quả bằng văn bản</li>
+</ul>
+<a class="mt-auto block text-center py-4 bg-primary text-white font-bold uppercase rounded-lg hover:bg-red-700 transition-all" href="#booking">Đăng Ký PT Ngay</a>
+</div>
+</div>
+<!-- Plan 3 -->
+<div class="bg-white dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/10 overflow-hidden hover:shadow-2xl transition-all group flex flex-col">
+<div class="relative h-48 overflow-hidden">
+<img class="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-transform" data-alt="Fitness group training session with members" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmei6q5DGKGNBSjHZqYWxdU0ZrO4CmQI71omMmALo5imOW6DsuHsTcrW_hZzz3jSaPCx9C50H8FmX8aboux4jli4blXX8sbu1nsUhopvTXXbIBZQ0ziOKjFMjs1H2qLIIKkEwin3qbMas3rQznHFvE9biyL_T-nSLQJpexZWt-oqGPDBe3pFY-gcwXJ674A3kOTb7CgrRRFPG3lPoP-m5wbjmsoemFZW2mcMHC-yqO3y0PvNDYaLp_51VVNDSj0ETrmcBaIPiKtXtE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black to-transparent"></div>
+<div class="absolute bottom-4 left-4">
+<h3 class="text-2xl font-black text-white uppercase italic">Lớp Nhóm (Small Group)</h3>
+</div>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<div class="mb-6">
+<span class="text-4xl font-extrabold text-primary">800k</span>
+<span class="text-slate-500 dark:text-slate-400">/tháng</span>
+</div>
+<ul class="space-y-4 mb-8 text-slate-700 dark:text-slate-300">
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Nhóm tối đa 6 người</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Truyền động lực mạnh mẽ</li>
+<li class="flex items-center gap-3"><span class="material-icons text-primary text-sm">done</span> Các bài tập Cardio &amp; HIIT</li>
+</ul>
+<a class="mt-auto block text-center py-3 border-2 border-primary text-primary font-bold uppercase rounded-lg group-hover:bg-primary group-hover:text-white transition-all" href="#booking">Gia Nhập Lớp</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advantages -->
+<section class="py-20 bg-background-dark border-y border-white/5">
+<div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="text-center">
+<span class="material-icons text-primary text-4xl mb-4">verified</span>
+<h4 class="text-white font-bold uppercase text-sm">Bằng cấp Quốc Tế</h4>
+</div>
+<div class="text-center">
+<span class="material-icons text-primary text-4xl mb-4">schedule</span>
+<h4 class="text-white font-bold uppercase text-sm">Lịch tập linh động</h4>
+</div>
+<div class="text-center">
+<span class="material-icons text-primary text-4xl mb-4">history_edu</span>
+<h4 class="text-white font-bold uppercase text-sm">Không HĐ ràng buộc</h4>
+</div>
+<div class="text-center">
+<span class="material-icons text-primary text-4xl mb-4">location_on</span>
+<h4 class="text-white font-bold uppercase text-sm">Trung tâm Quận 7</h4>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-3xl font-extrabold text-slate-900 dark:text-white uppercase mb-12 text-center">Kết Quả Từ Học Viên</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-white/5 p-8 rounded-xl shadow-lg border border-slate-100 dark:border-white/5 relative">
+<span class="material-icons text-primary text-5xl absolute top-6 right-8 opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4">
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 mb-6 italic">"Trước đây mình rất tự ti về ngoại hình. Sau 2 tháng tập cùng PT tại Strong Life, mình đã giảm được 8kg và săn chắc hơn rất nhiều!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a satisfied female gym member" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAG1t3EAQJ_982ilW9f9y1lCdH7fOvxsmW5EiKsZt-AXFJkYAjdbYp4nFUdESI9DtE2dw7VtgZ_AnPc_xYWHHQf-7xcbTp_AJ1RH_wCHaAgr2oNRIk5kWTvwE5GWRG48Dm2O1PIjdKTl36z6PdH7x5FbG20skg4TAHtn-HoJ7o9BYEMdVt6ovfEcHc9WP1nEfI3XzNH0S5xWR3Rd4mwHP-AShQ-e1EUJ3XXkMTu5Xod60Rhg_7ubt5ewsNK023CChbMPmUaPz455kKt"/>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white uppercase text-xs">Chị Minh Anh</h5>
+<p class="text-primary text-[10px] font-bold">-8kg trong 2 tháng</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-xl shadow-lg border border-slate-100 dark:border-white/5 relative">
+<span class="material-icons text-primary text-5xl absolute top-6 right-8 opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4">
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 mb-6 italic">"Phòng tập không quá đông nên rất thoải mái. Coach nhiệt tình, chỉnh từng động tác nhỏ nên mình cảm nhận cơ rất tốt."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a male member with athletic build" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDngRHaTlNMCW2TAsXuJyqCyMchyHMR6TGtkzANZuwpnepm7T_jcHwDiUJM8O_Ga25lfXXUSiVg6LjyYAugZ8HBiAis5-RHZLghYf_9Vkg1o-vSN0hFLROkL7vKOYxj1QMY0C1qUIfsndHaJBj77-YMUbraPcFz0ywAS6dy9khkIsHvu0eZIb3ZjPie5z5Q2D7CFuIkkHujy21mdep1KP2vKAv43QOyk9G0nwpWUaoNEgmaDEtzSt-r2lwvRp7XPL1gAHUEZ_x54IvY"/>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white uppercase text-xs">Anh Tuấn Kiệt</h5>
+<p class="text-primary text-[10px] font-bold">Tăng 5kg cơ bắp</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-xl shadow-lg border border-slate-100 dark:border-white/5 relative">
+<span class="material-icons text-primary text-5xl absolute top-6 right-8 opacity-20">format_quote</span>
+<div class="flex gap-1 mb-4">
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+<span class="material-icons text-primary text-sm">star</span>
+</div>
+<p class="text-slate-700 dark:text-slate-300 mb-6 italic">"Môi trường tập luyện cực kỳ sạch sẽ và văn minh. Rất phù hợp cho ai thích sự yên tĩnh và tập trung cao độ."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of a smiling young woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuYwi0ZCfRvCcC_Ws3kVz3ljOhYvC4BZQMGnxd7cUNaiRAeg7MaGTvl77l9xCNc9K31a7ZvINlN-zHE3INKzhQwSv3sHuPivlKVI9rqSV4Dt9yETXWWMnCb0iTrjp5vB_8bZveCiktJ4GOVOlgp0o9JyCuuhG374q8ksAu9iBL8RBhNSAa9o-UFJotCD64XOPhgPcUEcp2uTU9Z3d5SEQRH4EO76yy7skaOLTj_MWauvEIqK3FqOSlCtkj7PIOa7tpb6WXrUAOJyJ-"/>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 dark:text-white uppercase text-xs">Chị Mỹ Linh</h5>
+<p class="text-primary text-[10px] font-bold">Duy trì vóc dáng</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="py-24 bg-background-dark relative overflow-hidden" id="booking">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="Dumbbell set in a dark room with dramatic red lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7w2XXY1mQVgTrtZYepCAhBS8UQ2B532nR_5DRgpah6P2meQBIqD9oc29GdKGAUgvmmpGFv3ySuT7q8Zg-T_7KZsCfqKkQBQD9k7JHUzassGG_28lKOGC7qRD_jfIyuNftcUVamxO-sDUrC4PhN8g_ztW68bz6BfYw7E4LtpUbxUVl7GS5sdlENVi0BWc4-cDoChI9-NQlNcHDc0p4zwy7LxSTX2VbcG0ppt919S3D2GCvEu4MHktsv1cifwkF50hgWIQKDCUqcZT6"/>
+</div>
+<div class="max-w-4xl mx-auto px-4 relative z-10">
+<div class="bg-white dark:bg-[#1a0c0c] p-8 md:p-12 rounded-3xl shadow-2xl border border-white/5">
+<div class="text-center mb-10">
+<h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white uppercase mb-4 tracking-tighter">Đăng Ký Tập Thử Miễn Phí</h2>
+<p class="text-slate-600 dark:text-slate-400">Để lại thông tin, chúng tôi sẽ liên hệ tư vấn trong vòng 15 phút.</p>
+</div>
+<form class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">Họ và Tên</label>
+<input class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Nhập tên của bạn" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">Số Điện Thoại</label>
+<input class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Nhập số điện thoại" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">Mục Tiêu</label>
+<select class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none">
+<option>Giảm cân / Đốt mỡ</option>
+<option>Tăng cơ / Cải thiện vóc dáng</option>
+<option>Duy trì sức khỏe</option>
+<option>Tập luyện thi đấu</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">Giờ Tư Vấn Ưu Tiên</label>
+<select class="w-full bg-slate-100 dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-xl px-4 py-3 text-slate-900 dark:text-white focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all appearance-none">
+<option>Buổi Sáng (8:00 - 12:00)</option>
+<option>Buổi Chiều (12:00 - 17:00)</option>
+<option>Buổi Tối (17:00 - 21:00)</option>
+</select>
+</div>
+<div class="md:col-span-2 mt-4">
+<button class="w-full bg-primary hover:bg-red-700 text-white font-black text-xl uppercase py-5 rounded-xl shadow-xl shadow-primary/30 transform active:scale-95 transition-all" type="button">
+                            Đăng ký tập thử MIỄN PHÍ ngay
+                        </button>
+<p class="text-center text-[10px] text-slate-500 dark:text-slate-400 mt-4 uppercase tracking-widest font-bold">Số lượng chỗ tập thử có hạn mỗi tuần</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Final CTA & Address -->
+<section class="py-24 bg-primary text-white overflow-hidden relative">
+<div class="bg-noise absolute inset-0 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-4 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl md:text-5xl font-black uppercase mb-6 italic leading-tight">Đừng chờ đợi nữa.<br/>Thay đổi ngay hôm nay!</h2>
+<div class="space-y-6 mb-8">
+<div class="flex items-start gap-4">
+<span class="material-icons text-white bg-white/20 p-2 rounded-lg">location_on</span>
+<div>
+<p class="font-bold text-xl">Strong Life Gym District 7</p>
+<p class="text-white/80">123 Đường Số 7, Phường Tân Phong, Quận 7, TP.HCM</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-icons text-white bg-white/20 p-2 rounded-lg">access_time</span>
+<div>
+<p class="font-bold text-xl">Giờ Hoạt Động</p>
+<p class="text-white/80">Thứ 2 - Thứ 7: 05:00 - 22:00 | Chủ Nhật: 08:00 - 20:00</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-4 bg-white text-primary px-10 py-5 rounded-full text-2xl font-black shadow-2xl hover:scale-105 transition-transform" href="tel:0901234567">
+<span class="material-icons text-3xl">phone</span> 090.123.4567
+                </a>
+</div>
+<div class="h-96 w-full rounded-2xl overflow-hidden border-4 border-white/20 shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Google Map showing District 7 Ho Chi Minh City" data-location="District 7, Ho Chi Minh City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeVT797dljMjeXtpV_6ToVoRpQs7zNQ4JdHmUUkvu48Z34Kq5xSNcXB8pa7xmQSmC_YIo3kI7WsyjrClOwfEXDeObuwOCN_2GLVtznGLrzftdByabZG2E8aNCMWCmcphypzTNR-fpyBXWk9PGLgTwUiDi1sIYmjj0pOQjXhjHtk_8yg2F7ZSTo4zTrYk5NXJb6Z4s8V2FGHaWLbv7PZ-UxwhBTgKyol362oUCR8Y3eBf4SbvCZBRC3p9hzGP55XuQWK17eLHkfmW28"/>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-background-dark py-12 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-8 text-center md:text-left">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 bg-primary flex items-center justify-center rounded-lg">
+<span class="material-icons text-white text-sm">fitness_center</span>
+</div>
+<span class="text-lg font-bold tracking-tighter uppercase text-white">Strong <span class="text-primary">Life</span></span>
+</div>
+<div class="flex gap-8 text-xs font-bold text-slate-500 uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="#">Facebook</a>
+<a class="hover:text-primary transition-colors" href="#">Instagram</a>
+<a class="hover:text-primary transition-colors" href="#">Tiktok</a>
+<a class="hover:text-primary transition-colors" href="#">Youtube</a>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5 gap-4">
+<p class="text-slate-500 text-[10px] uppercase tracking-widest">© 2024 Gym Strong Life. All rights reserved.</p>
+<div class="flex gap-6 text-[10px] uppercase tracking-widest text-slate-600 font-bold">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

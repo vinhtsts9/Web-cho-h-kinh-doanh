@@ -6,17 +6,17 @@ import Process from '../components/Process';
 import Pricing from '../components/Pricing';
 import ContactCTA from '../components/ContactCTA';
 
-const Home = () => {
+function Home() {
   return (
-    <>
+    <div className="home-page">
       <Hero />
       <Benefits />
       <DemoCards />
-      <Pricing />
       <Process />
+      <Pricing />
       <ContactCTA />
-    </>
+    </div>
   );
-};
+}
 
 export default Home;

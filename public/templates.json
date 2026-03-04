@@ -1,0 +1,101 @@
+[
+  {
+    "id": "cafe-nha-huong",
+    "name": "Cafe Nhà Hương",
+    "category": "F&B",
+    "description": "Giao diện cafe chuyên nghiệp với tone màu ấm áp, phù hợp cho tiệm café, quán ăn vặt. Responsive 100%, tối ưu SEO, tích hợp đặt bàn online.",
+    "image": "/templates/cafe-nha-huong/screen.png",
+    "color": "#D2691E",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/cafe-nha-huong/index.html",
+    "codePath": "template_stitch/cafe_nhà hương/code.html"
+  },
+  {
+    "id": "shop-thoi-trang-linh",
+    "name": "Shop Thời Trang Linh",
+    "category": "Bán Lẻ",
+    "description": "Shop thời trang Hàn Quốc online - nhập trực tiếp, giá tốt, hàng mới mỗi tuần. Responsive đầy đủ, hiển thị sản phẩm, tích hợp Zalo contact.",
+    "image": "/templates/shop-thoi-trang-linh/screen.png",
+    "color": "#E91E63",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/shop-thoi-trang-linh/index.html",
+    "codePath": "template_stitch/shop Thời trang Linh/code.html"
+  },
+  {
+    "id": "dien-lanh-minh-tuan",
+    "name": "Điện Lạnh Minh Tuấn",
+    "category": "Dịch Vụ",
+    "description": "Dịch vụ sửa chữa điều hòa 24/7 - Thợ giỏi 15 năm, đến nhanh 30 phút, bảo hành 6 tháng. Responsive mobile-first, form contact dễ sử dụng.",
+    "image": "/templates/dien-lanh-minh-tuan/screen.png",
+    "color": "#005086",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/dien-lanh-minh-tuan/index.html",
+    "codePath": "template_stitch/Điện lạnh Minh Tuấn/code.html"
+  },
+  {
+    "id": "chup-anh-cuoi",
+    "name": "Studio Ánh Dương",
+    "category": "Dịch Vụ",
+    "description": "Studio chụp ảnh cưới chuyên nghiệp - 7 năm kinh nghiệm, 500+ cặp đôi đã tin tưởng. Gói chụp linh hoạt, album cao cấp, makeup miễn phí.",
+    "image": "/templates/chup-anh-cuoi/screen.png",
+    "color": "#f2b90d",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/chup-anh-cuoi/index.html",
+    "codePath": "template_stitch/chụp ảnh cưới/code.html"
+  },
+  {
+    "id": "garage-minh-tuan",
+    "name": "Garage Minh Tuấn",
+    "category": "Dịch Vụ",
+    "description": "Sửa chữa ô tô uy tín tại Đà Nẵng - 12 năm kinh nghiệm, thợ được đào tạo tại Nhật. Bảo hành 6 tháng, báo giá rõ ràng, dịch vụ chu đáo.",
+    "image": "/templates/garage-minh-tuan/screen.png",
+    "color": "#ec1313",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/garage-minh-tuan/index.html",
+    "codePath": "template_stitch/garage  minh tuấn/code.html"
+  },
+  {
+    "id": "gym-strong-life",
+    "name": "Gym Strong Life",
+    "category": "Thể Thao",
+    "description": "Phòng gym boutique Quận 7 - Lớp nhỏ 6-8 người, coach 8 năm kinh nghiệm. Thiết bị hiện đại, không hợp đồng dài hạn, cam kết kết quả bằng văn bản.",
+    "image": "/templates/gym-strong-life/screen.png",
+    "color": "#ec1313",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/gym-strong-life/index.html",
+    "codePath": "template_stitch/gym/code.html"
+  },
+  {
+    "id": "noi-that-gia-phuc",
+    "name": "Nội Thất Gia Phúc",
+    "category": "Tư Vấn",
+    "description": "Thiết kế nội thất trọn gói - 10 năm kinh nghiệm, 200+ dự án hoàn thiện. Từ thiết kế đến thi công, hỗ trợ tín chỉ cơm bếp đầy đủ.",
+    "image": "/templates/noi-that-gia-phuc/screen.png",
+    "color": "#f2a60d",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/noi-that-gia-phuc/index.html",
+    "codePath": "template_stitch/nội thất/code.html"
+  },
+  {
+    "id": "tiem-banh-hanh",
+    "name": "Tiệm Bánh Hạnh",
+    "category": "F&B",
+    "description": "Tiệm bánh handmade chuẩn Pháp - Chef tốt nghiệp Paris, 7 năm kinh nghiệm. Bánh tươi mỗi ngày, custom mẫu theo ý, giao nhanh 2 giờ.",
+    "image": "/templates/tiem-banh-hanh/screen.png",
+    "color": "#ee2b7c",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/tiem-banh-hanh/index.html",
+    "codePath": "template_stitch/tiệm bánh ngọt/code.html"
+  },
+  {
+    "id": "bright-future-english",
+    "name": "Anh Ngữ Bright Future",
+    "category": "Giáo Dục",
+    "description": "Trung tâm IELTS chuyên sâu - Học với cô Mai Phương IELTS 8.5, lớp nhỏ 6-8 người. Cam kết đầu ra bằng văn bản, tài liệu miễn phí, môi trường lý tưởng.",
+    "image": "/templates/bright-future-english/screen.png",
+    "color": "#f2a60d",
+    "price": "Liên hệ",
+    "demoUrl": "/templates/bright-future-english/index.html",
+    "codePath": "template_stitch/trung tâm tiếng anh/code.html"
+  }
+]

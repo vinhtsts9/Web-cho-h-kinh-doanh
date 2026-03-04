@@ -25,10 +25,6 @@ const Footer = () => {
           <div>
             <h4 style={{ color: 'white', marginBottom: '1.5rem', fontSize: '1.1rem' }}>THÔNG TIN LIÊN HỆ</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-              <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start' }}>
-                <MapPin size={20} color="var(--primary-color)" style={{ marginTop: '2px' }} />
-                <span>Tầng 5, Tòa nhà TechTower, Quận Cầu Giấy, Hà Nội</span>
-              </div>
               <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
                 <Phone size={20} color="var(--primary-color)" />
                 <a href="tel:0343673555" style={{ fontWeight: '600', color: 'white' }}>0343.673.555</a>

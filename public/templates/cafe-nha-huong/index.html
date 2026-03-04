@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cafe Nhà Hương - Cà phê rang xay nguyên chất</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d47311",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221910",
+                    },
+                    fontFamily: {
+                        "display": ["Be Vietnam Pro", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>body {
+    font-family: "Be Vietnam Pro", sans-serif
+    }
+.wood-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDalPDhESBk3HWPQ_vW8xbB8-Q3gNisaM3dYR0eli1noxKBBy8L3bA8XMF8emWEX7c-PE43BFtdCiats0P1rOcPqVDyiPYMKG3OVY52weHvMgGxjJizxktIUtCI8jGBPotLPZCqICPDU6lg8Y8JqZtUxFqG2nk12v7tVDSFOYtYudH_6FO_4GIZEVqxDQSkeHqvMp1NhvQJHnios7jEgW5TTNl8sazVBM_K4OP2Ek2mc04LSOKteVbBqRSkR_vtoFB34mWJ76W5uClA)
+    }</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-stone-800 dark:text-stone-200 font-display">
+<!-- Navigation -->
+<nav class="fixed w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center">
+<span class="text-2xl font-bold text-primary tracking-tight">CAFE NHÀ HƯƠNG</span>
+</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#story">Câu chuyện</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#menu">Thực đơn</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="#gallery">Không gian</a>
+<a class="bg-primary text-white px-6 py-2.5 rounded-lg text-sm font-bold hover:bg-primary/90 transition-all" href="#booking">Đặt bàn ngay</a>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="Traditional Vietnamese coffee phin filter dripping on wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI54owDWM6MMbpWip8Ze8iYlrJCBYNqChxNExNvNXSuDZw-wK0nUS9MTQ96oUiTnim102gQyuU0AQwXGiSkVQJMHfGBmnGV8TEqsVIwaNrOTVWFB5CD8GP2q5Ux0QmPfY4mS5Ho99dGNPdI2vDzS38jhNgeCmOLWYd6LHxtdfteTzUu9BegdC05T1KekgcAz1v-T7skdwz_RiG26XfNcH8FUN5RV7lDNUKb5RT1-dZm-Szd1wQEVPpCUUJMw7Dtn9XOJWLcdNYR3hW"/>
+<div class="absolute inset-0 bg-black/50"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-widest uppercase mb-4 block">Hương vị truyền thống Quận 1</span>
+<h1 class="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
+                    Cafe Nhà Hương - <span class="text-primary">Cà phê rang xay</span> nguyên chất
+                </h1>
+<p class="text-lg text-stone-200 mb-10 leading-relaxed max-w-lg">
+                    Giữ trọn nét tinh túy của hạt cà phê cao nguyên Lâm Đồng, kết hợp phương pháp rang mộc thủ công truyền thống suốt 10 năm qua.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-center font-bold text-lg transition-all transform hover:-translate-y-1 shadow-lg shadow-primary/20" href="#booking">
+                        Đặt bàn ngay
+                    </a>
+<a class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-4 rounded-xl text-center font-bold text-lg transition-all" href="#menu">
+                        Xem menu
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pain Points Section -->
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-stone-100 dark:bg-stone-800/50 rounded-2xl border border-stone-200 dark:border-stone-700">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary">noise_control_off</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Mệt mỏi vì ồn ào?</h3>
+<p class="text-stone-600 dark:text-stone-400">Một góc nhỏ tĩnh lặng giữa Quận 1 nhộn nhịp, tách biệt khỏi khói bụi và tiếng còi xe.</p>
+</div>
+<div class="p-8 bg-stone-100 dark:bg-stone-800/50 rounded-2xl border border-stone-200 dark:border-stone-700">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary">sentiment_dissatisfied</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Mất hương vị cà phê?</h3>
+<p class="text-stone-600 dark:text-stone-400">Nói không với cà phê trộn tạp chất. Chúng tôi cam kết 100% hạt Arabica và Robusta rang mộc.</p>
+</div>
+<div class="p-8 bg-stone-100 dark:bg-stone-800/50 rounded-2xl border border-stone-200 dark:border-stone-700">
+<div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-6">
+<span class="material-icons text-primary">bolt</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Thiếu năng lượng làm việc?</h3>
+<p class="text-stone-600 dark:text-stone-400">Cơ sở vật chất hiện đại với Wifi tốc độ cao và ổ cắm mọi góc bàn giúp bạn tập trung tối đa.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Story Section -->
+<section class="py-24 bg-white dark:bg-background-dark/50" id="story">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row items-center gap-16">
+<div class="lg:w-1/2 relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary/20 rounded-full blur-3xl"></div>
+<img class="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]" data-alt="Smiling woman coffee shop owner Chị Lan Hương" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqjcQrHjNB14CH2C18vK19E-gL2NdBtGPtXePBTCh4E0ucOEKj_jHj4-73zciZvVePscoIZdNaKqMBILsgeVL9ktXl6LqXdv66nvB8UYtB9aUIE8NLJVGFaSlcWN1sBYL55ceIwxFtggHwuSutZAa-_ZRFTNe4FBVS1TkWpzeqOK9WObkCkLiinVZ1eSdIkERuZp1OGCj1dqDFe67ZUqoA2Hre2PCfeW449c8eyJBY_6LvnC47deg-f2Fp-FpJu2i8OEMpixlLO9W_"/>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl shadow-xl z-20">
+<p class="text-3xl font-bold">10</p>
+<p class="text-sm font-medium uppercase tracking-wider">Năm kinh nghiệm</p>
+</div>
+</div>
+<div class="lg:w-1/2">
+<h2 class="text-4xl font-bold mb-8 leading-tight">10 năm mang hương vị cà phê truyền thống</h2>
+<div class="space-y-6 text-lg text-stone-600 dark:text-stone-400 leading-relaxed">
+<p>Bắt đầu từ một chiếc xe đẩy nhỏ ven đường vào năm 2014, Chị Lan Hương đã dành trọn tâm huyết để tìm kiếm những hạt cà phê ngon nhất từ vùng đất Đà Lạt nắng gió.</p>
+<p>Với Chị Hương, mỗi ly cà phê phin không chỉ là một thức uống tỉnh táo buổi sáng, mà là lời chào thân thương, là nơi kết nối những tâm hồn đồng điệu yêu nét đẹp truyền thống của Sài Gòn xưa.</p>
+<p class="italic text-stone-800 dark:text-stone-200">"Hương vị nguyên bản là điều tôi luôn gìn giữ, dù cuộc sống có hối hả thế nào đi chăng nữa." - Chị Lan Hương</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Gallery Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="gallery">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Không gian của Nhà Hương</h2>
+<div class="flex justify-center gap-8 text-primary">
+<div class="flex items-center gap-2"><span class="material-icons text-sm">wifi</span> <span class="text-xs font-bold uppercase tracking-widest">Wifi 6</span></div>
+<div class="flex items-center gap-2"><span class="material-icons text-sm">ac_unit</span> <span class="text-xs font-bold uppercase tracking-widest">Điều hòa</span></div>
+<div class="flex items-center gap-2"><span class="material-icons text-sm">power</span> <span class="text-xs font-bold uppercase tracking-widest">Ổ cắm 24/7</span></div>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Modern minimalist cafe interior seating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB70wIdX9aOhw0tX0839T-v0epjDKpNM0RbjlEEs0V8BP8ckKRrRH1Awx1LwqFgZui9CGjNXejF6ZV7jdnJwCrK0ApiGMUikAx5VgJckMKM0c5Fi5KU88rhUEP7_6Raw78SH8N4CpbQpjBq7JkJ9kHC6xRsC2S5-eTVi-9sAphhacrlaaNXF38-Bg5gt9d9KntA4gnCJx0yQZtp-AuTFSxu5va2XMoWElEMrbLcsLv2PtCy9AJBeGo_cOH8WfHbfOIu_O5WFMKttZD4"/>
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Barista brewing coffee at wooden counter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMkypXAEMinQmKz8RVKXJRCpAK6rgjPPu8cX21IumIN7s75YtlXcLP8c74twYg97dv45PzZMCM-FSe5g7eOCSuDkUU90RP8boESRS6WTwP_53T6KrdayGmlWBNimo1xA2EipzFgcq_462W3qM6PkK9SgU_kdTJN7O5-ebrwmhcBe1_HKfNb3Y2RQMgWqRTvR9CQqHQ3J4-IXzy5u4-w9cCrehL5Y_nfuhkNytb52boaKPB2VvAl8ySabQAoaqp8r-58xRGC9wbN30-"/>
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Outdoor garden cafe seating area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3lPGQQv4Fu_Qe50B6RaV2S5o83sjQS83bRyajDXG1wk-Oks6jgOuCf_nTneiinUqevkUBEDDf6HlZ4H9GC7-NZdXAyGTPpEcMUWO53mU8QCAJr27bpDtOjZWao9QyAwKXHmMne7yn_7RM8r5fkYztcyKGwpSrRbdN2LG1TxuiwpJcPBDLgrCBi5VyezCwQGlouHVKD7XmLszCBqUih5qpzDuxxdDNaWl8Io8M7_sBordJtnuh9p5K_vMgHVY1u7VDeR0C3MPqSfKm"/>
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Closer look at coffee beans and phin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO0QgTF33KK1TXma4tLkUcRO11VGsRTEUZA63CK2CvEcWLrjSToRicW29mv5V146MxBmiYVRZdwuxfQ7ACbG6rMvdZYwH04toi1OkDdSjGLfwXvoxj_2mv1xWiyGIYL094DqIkJHKwG20OPZh4pSX4etXJCafWUx-vfxpFkThPytmir_WNbGAkXOyJQLJunVP8gzO_txJYI2tvQaFaPp0IC9P0v7kS3IAybGneQPM_TRljClArkOFt4jiyzpBof4cxMyq6PVnri2yk"/>
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Customer working on laptop in cafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJzjKl0z4czxn4Z5E2JYXlv5DrvMCeDOLYaxQD9EjW2KumTOPhsj6bc6lanMzxD5ZlcdS2rvNQXwihSAoBiLNgYNIyEBLX5D8pyDsznHinwfa86JJmFcFhg2b4iQeJoAniTcrTvrNhhP_HbFZU7MjeZDVfrTKmPEivmWJa4auyzh57Y9KWfk-Iedd7gUFg0lAvUNeeHwgr4jYtfguIwo8Hhvby7JKmAxdmH3JximqdnRw8zjyVk1jBLhDwPTQXwrUm-RMz10Tqvum2"/>
+<img class="h-64 w-full object-cover rounded-xl" data-alt="Cozy armchair in corner of coffee shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDskG-6TpVbujEPgbeKdJGtf7JI30C5bEiycuTAB1dNXGxwwxlyOwprn5z3Ir1TUjsJHfRHPYpd9g_L0sr__TKvHhgW7PxMcvxwxMoCbfpVI1zpUkc7MEgb8U2LgeOxkpFwbQJlU4_bdYyQXOap4uhSkjFg6g5t21MQCjELuhWCMc4Fpf0rLFDvTq0XNogPDqauXneDlzo-bdofGfy2VFG3zK5EyQwx_4t4PYWdeDDoQniMT0ovAGX7mtlw1dKQ230UBLqlstcpux6P"/>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="py-24 bg-stone-100 dark:bg-stone-900 wood-texture" id="menu">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Món ngon không thể bỏ qua</h2>
+<p class="text-stone-600 dark:text-stone-400">Những hương vị đặc trưng tạo nên thương hiệu Nhà Hương</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Item 1 -->
+<div class="bg-white dark:bg-stone-800 p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-stone-200 dark:border-stone-700 group">
+<div class="overflow-hidden rounded-xl mb-6">
+<img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Traditional Vietnamese Phin black coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARY5kI4K6F1bfFc3jhc-hQKXT_FvZ49zELFmTwFFlHKmB9FKNgZk-wMCvr4M72pxqUyUvYRQI8840UuowWjXVuThmT5a0xXGVl3blot5zs03kH9Wd34xtQCP4QZOeIb2FzmgBKnkZRYqyYPsEYB8QVpZx07wNUZDjIapuiy5WbUy62sJO3JIPCDMbwWJUoWHG67lCLgYnXAyG6rvm1jrzMNgZCsbigjSRtkkZu_sF_uc62wa3MrZHokSgq_03_cGm2nXqdsg-vJtFb"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-bold text-lg">Cà phê Phin</h4>
+<span class="text-primary font-bold">25.000đ</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400">Hạt Robusta đậm đà, pha phin truyền thống.</p>
+</div>
+<!-- Item 2 -->
+<div class="bg-white dark:bg-stone-800 p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-stone-200 dark:border-stone-700 group">
+<div class="overflow-hidden rounded-xl mb-6">
+<img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Iced Vietnamese milk coffee Bac Xiu" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATz9W9rD7RPeXNcrNnVpt0xs_P8QOhDYx4MN4TlKVQz34GG4wc2309G0bW-rQiMXViiWzhYl39WfP-63Lp6R2fonRXaEfiPDuDYlBbufLICL7V0V8RMufSfVHyDwWMQvFLPZ8PlbVOjbMXFv1kECgqNjh0VU_ReWIgKYQgXedKh39VCZ-x1sRT3cRhqNutj6112Nuga1VdDm4jS4OxahuU151BBODKICJIYDSiXY5HUuoPOqJ5K5oejYbrRInmYoxNN5KFsLTi579z"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-bold text-lg">Bạc Xỉu</h4>
+<span class="text-primary font-bold">30.000đ</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400">Hòa quyện giữa sữa đặc và cafe thơm nồng.</p>
+</div>
+<!-- Item 3 -->
+<div class="bg-white dark:bg-stone-800 p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-stone-200 dark:border-stone-700 group">
+<div class="overflow-hidden rounded-xl mb-6">
+<img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Coconut coffee with white foam" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBms5Kt-zBN1EjaE_v341fuyGWEQluFWFpnV0aFXvG-bXekWdGCxS0cBbKiZ3cXUjqXH0tjrcm3HtZpCor5jJ9Dww55-phkxTHphMFxo0IpL46Tc4D65KgZQ8p7m_3qlT7IdVtTPqosbrzIsYjqb9l8EacY9Is2-RolQ6q6Py_po62RFrFz9x3I0U4Ze0C7dJOmY-E8j_hJDBzB_aGUdIRdxZUaUbinFOdcbQpNG_xfhmEtSbwxONFymusAksTW9rUv6ID76_qw2bqO"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-bold text-lg">Cà phê Sữa Dừa</h4>
+<span class="text-primary font-bold">35.000đ</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400">Vị béo ngậy của dừa tươi kết hợp cafe.</p>
+</div>
+<!-- Item 4 -->
+<div class="bg-white dark:bg-stone-800 p-4 rounded-2xl shadow-sm hover:shadow-xl transition-all border border-stone-200 dark:border-stone-700 group">
+<div class="overflow-hidden rounded-xl mb-6">
+<img class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Vietnamese baguette banh mi que" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF-iAuwRRSbHvNzYBmTeeD1IDX_-cg96DzDzxtNQEjegR3vdgsHWm_pIbRhUBcD_TwOPTQy2emhFkJ_j5IkDt0zDNYF_9pGyunjpiE-g-3YypM1SPPckYTBl7IELOop66hP7iqm1ul9HzsJgvpuoRsdd5KKBeBL1eKaLQv2F-Ur1CQmmu7qMOOAM60709H0JcaqgjzcCejKuW9uu8ttgixNhi0HfuEIcyUCYmIrd78Ou1EGd0nNvZRREWZDmbl5Mm3y40jafMn__pW"/>
+</div>
+<div class="flex justify-between items-start mb-2">
+<h4 class="font-bold text-lg">Bánh mì que</h4>
+<span class="text-primary font-bold">15.000đ</span>
+</div>
+<p class="text-sm text-stone-500 dark:text-stone-400">Giòn tan, pate nóng hổi, cay tê đầu lưỡi.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Key Benefits -->
+<section class="py-16 bg-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-white">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-icons text-3xl">eco</span>
+</div>
+<div>
+<h4 class="text-xl font-bold">100% Đà Lạt</h4>
+<p class="text-white/80">Hạt được tuyển chọn từ vùng Cầu Đất nổi tiếng.</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-icons text-3xl">local_fire_department</span>
+</div>
+<div>
+<h4 class="text-xl font-bold">Rang mộc tươi</h4>
+<p class="text-white/80">Rang mẻ nhỏ mỗi tuần để đảm bảo độ tươi mới.</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0">
+<span class="material-icons text-3xl">timer</span>
+</div>
+<div>
+<h4 class="text-xl font-bold">Phục vụ nhanh</h4>
+<p class="text-white/80">Đảm bảo đồ uống có trên bàn trong dưới 5 phút.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-bold text-center mb-16">Cảm nhận từ khách hàng</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-stone-50 dark:bg-stone-800 p-8 rounded-2xl border border-stone-200 dark:border-stone-700">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+</div>
+<p class="text-lg italic mb-6">"Không gian ở đây rất ấm cúng. Cafe Phin đậm đà đúng chất Sài Gòn xưa. Sẽ là địa điểm quen thuộc của mình mỗi sáng cuối tuần."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-stone-300"></div>
+<div>
+<p class="font-bold">Anh Minh</p>
+<p class="text-sm text-stone-500">Thiết kế tự do</p>
+</div>
+</div>
+</div>
+<div class="bg-stone-50 dark:bg-stone-800 p-8 rounded-2xl border border-stone-200 dark:border-stone-700">
+<div class="flex text-yellow-400 mb-4">
+<span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span><span class="material-icons">star</span>
+</div>
+<p class="text-lg italic mb-6">"Bạc xỉu rất ngon, không quá ngọt. Nhân viên phục vụ nhiệt tình và wifi cực kỳ nhanh, rất phù hợp để ngồi làm việc."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-stone-300"></div>
+<div>
+<p class="font-bold">Chị Thu</p>
+<p class="text-sm text-stone-500">Nhân viên văn phòng</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Booking Form Section -->
+<section class="py-24 bg-stone-900 text-white relative overflow-hidden" id="booking">
+<div class="absolute inset-0 z-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="Abstract blurry background of a coffee shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_g8YFg7eVK-ThNTPNBaLbaFxcdCDFRBdwON2V7lsIz9CKrF1yIJY1PuLhXXQHf_2ICcwoqYYWOosYDH2bauzwQj0WiykZvObARtfo0GgT8SvOplA9qtDhkFxiSlcjIeT_fEfyuoEjuCgUwvgBjM4yJxHTTQBRK5caVgqq-D8gBYIoA_VFvJ3fKtA9YfPC7U3FPDWQ28mk9TmvdHAVgg7txcOAFpHptk2opGwzoA5BzkmLhjehdycxNShXUYTgY76rYvOhYVpOTyTq"/>
+</div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-4xl font-bold mb-6 leading-tight">Ghé Cafe Nhà Hương ngay hôm nay!</h2>
+<p class="text-stone-400 text-lg mb-8 leading-relaxed">Để chuẩn bị chu đáo nhất cho buổi họp mặt hoặc góc làm việc của bạn, hãy để lại thông tin đặt bàn trước.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4">
+<span class="material-icons text-primary">place</span>
+<span>123 Lê Lợi, Phường Bến Thành, Quận 1, TP. HCM</span>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-icons text-primary">phone</span>
+<span>090 123 4567</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-3xl p-8 shadow-2xl">
+<h3 class="text-2xl font-bold text-stone-900 mb-8">Thông tin đặt bàn</h3>
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-stone-700 mb-2 uppercase tracking-wide">Họ và tên</label>
+<input class="w-full rounded-xl border-stone-200 focus:border-primary focus:ring-primary text-stone-900 bg-stone-50" placeholder="Nguyễn Văn A" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold text-stone-700 mb-2 uppercase tracking-wide">Số điện thoại</label>
+<input class="w-full rounded-xl border-stone-200 focus:border-primary focus:ring-primary text-stone-900 bg-stone-50" placeholder="090..." type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold text-stone-700 mb-2 uppercase tracking-wide">Số lượng khách</label>
+<select class="w-full rounded-xl border-stone-200 focus:border-primary focus:ring-primary text-stone-900 bg-stone-50">
+<option>1-2 người</option>
+<option>3-5 người</option>
+<option>Trên 5 người</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-bold text-stone-700 mb-2 uppercase tracking-wide">Thời gian</label>
+<input class="w-full rounded-xl border-stone-200 focus:border-primary focus:ring-primary text-stone-900 bg-stone-50" type="time"/>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-4 rounded-xl font-bold text-lg hover:bg-primary/90 transition-all shadow-lg shadow-primary/30" type="submit">
+                            Xác nhận đặt bàn
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Map/Location Section -->
+<section class="h-96 w-full relative">
+<div class="absolute inset-0 bg-stone-200" data-location="District 1, Ho Chi Minh City" style="">
+<!-- Simulated map with an image -->
+<img class="w-full h-full object-cover" data-alt="Google map of District 1 Ho Chi Minh City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDua6x9kNuMbpMUdWRvU7Qzwd-Q4_r8LR0JspYQ2A5ygENEuJVdnyq7DaFOXYtdWkGsrvQc8giTqB9Zcr353s3pmQ2xOreGPRr7JK4Qw4aCzAFUWtkVbVr4YS-ZPpHE2FVjAPIHt920W-Ft6_5JK1PYppptftM99Of-rSXJNfvGKbo7j0UL-EBPhiZ42qYY4farMYF22Z688EFssS_TIUJYxjGFxwhEU5j1j48Nkl3_R7EX9XPg6-yk-8WKpMoILd7LSfVIiNMB1uhp"/>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="bg-primary text-white p-4 rounded-full shadow-2xl animate-bounce">
+<span class="material-icons">location_on</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-stone-950 text-stone-400 py-16 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-2">
+<span class="text-2xl font-bold text-primary tracking-tight block mb-6 uppercase">CAFE NHÀ HƯƠNG</span>
+<p class="max-w-md mb-8 leading-relaxed">
+                        Tự hào gìn giữ những giá trị văn hóa cafe Việt Nam qua từng ly cafe phin thơm nồng. Điểm hẹn quen thuộc của cộng đồng yêu cà phê Quận 1.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-stone-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all" href="#">
+<i class="material-icons text-xl">facebook</i>
+</a>
+<a class="w-10 h-10 rounded-full border border-stone-700 flex items-center justify-center hover:bg-primary hover:border-primary hover:text-white transition-all" href="#">
+<i class="material-icons text-xl">camera_alt</i>
+</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Liên kết</h4>
+<ul class="space-y-4">
+<li><a class="hover:text-primary transition-colors" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Thực đơn</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Ưu đãi</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Giao hàng</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6">Giờ mở cửa</h4>
+<ul class="space-y-4">
+<li class="flex justify-between">
+<span>Thứ 2 - Thứ 6</span>
+<span class="text-white">06:00 - 22:00</span>
+</li>
+<li class="flex justify-between">
+<span>Thứ 7 - Chủ Nhật</span>
+<span class="text-white">07:00 - 23:00</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="pt-12 border-t border-white/5 text-center text-sm">
+<p>© 2024 Cafe Nhà Hương. Thiết kế bởi sự tận tâm.</p>
+</div>
+</div>
+</footer>
+</body></html>

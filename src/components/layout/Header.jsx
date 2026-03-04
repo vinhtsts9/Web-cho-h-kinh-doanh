@@ -17,11 +17,27 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Trang Chủ', path: '/' },
-    { name: 'Kho Giao Diện', path: '/kho-giao-dien' },
-    { name: 'Bảng Giá', path: '/bang-gia' },
-    { name: 'Quy Trình', path: '/quy-trinh' },
+    { name: 'Kho Giao Diện', path: '/', isHash: true, id: 'kho-giao-dien' },
+    { name: 'Bảng Giá', path: '/', isHash: true, id: 'bang-gia' },
+    { name: 'Quy Trình', path: '/', isHash: true, id: 'process' },
     { name: 'Tin Tức', path: '/tin-tuc' },
   ];
+
+  const handleNavClick = (link) => {
+    if (link.isHash) {
+      setIsMobileMenuOpen(false);
+      // If we're already on home page, smooth scroll
+      if (location.pathname === '/') {
+        const element = document.getElementById(link.id);
+        element?.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // Otherwise navigate to home page
+        window.location.href = '/';
+      }
+    } else {
+      setIsMobileMenuOpen(false);
+    }
+  };
 
   return (
     <header style={{
@@ -47,19 +63,41 @@ const Header = () => {
         {/* Desktop Nav */}
         <nav className="desktop-nav" style={{ display: 'none', gap: '2rem', alignItems: 'center' }}>
           {navLinks.map((link) => (
-            <Link 
-              key={link.path} 
-              to={link.path}
-              style={{
-                fontWeight: '600',
-                fontSize: '0.95rem',
-                color: location.pathname === link.path ? 'var(--primary-color)' : 'inherit',
-                position: 'relative'
-              }}
-              className="nav-link"
-            >
-              {link.name}
-            </Link>
+            link.isHash ? (
+              <a
+                key={link.id}
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link);
+                }}
+                style={{
+                  fontWeight: '600',
+                  fontSize: '0.95rem',
+                  color: 'inherit',
+                  position: 'relative',
+                  cursor: 'pointer'
+                }}
+                className="nav-link"
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={link.path} 
+                to={link.path}
+                onClick={() => setIsMobileMenuOpen(false)}
+                style={{
+                  fontWeight: '600',
+                  fontSize: '0.95rem',
+                  color: location.pathname === link.path ? 'var(--primary-color)' : 'inherit',
+                  position: 'relative'
+                }}
+                className="nav-link"
+              >
+                {link.name}
+              </Link>
+            )
           ))}
         </nav>
 
@@ -99,14 +137,28 @@ const Header = () => {
           gap: '1.5rem'
         }}>
           {navLinks.map((link) => (
-            <Link 
-              key={link.path} 
-              to={link.path}
-              onClick={() => setIsMobileMenuOpen(false)}
-              style={{ fontSize: '1.1rem', fontWeight: '600', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}
-            >
-              {link.name}
-            </Link>
+            link.isHash ? (
+              <a
+                key={link.id}
+                href="/"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick(link);
+                }}
+                style={{ fontSize: '1.1rem', fontWeight: '600', borderBottom: '1px solid #eee', paddingBottom: '0.5rem', cursor: 'pointer' }}
+              >
+                {link.name}
+              </a>
+            ) : (
+              <Link 
+                key={link.path} 
+                to={link.path}
+                onClick={() => setIsMobileMenuOpen(false)}
+                style={{ fontSize: '1.1rem', fontWeight: '600', borderBottom: '1px solid #eee', paddingBottom: '0.5rem' }}
+              >
+                {link.name}
+              </Link>
+            )
           ))}
           <Link to="/lien-he" className="btn btn-primary" onClick={() => setIsMobileMenuOpen(false)}>
             Liên Hệ Tư Vấn

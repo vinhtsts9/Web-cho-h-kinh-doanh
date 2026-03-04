@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tiệm Bánh Ngọt Hạnh - Bánh Kem Handmade Chuẩn Pháp</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ee2b7c",
+                        "background-light": "#f8f6f7",
+                        "background-dark": "#221018",
+                        "accent-cream": "#fffcf9",
+                        "accent-brown": "#4a3728"
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .glass-nav { background: rgba(248, 246, 247, 0.8); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-accent-brown dark:text-gray-200 font-display">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 glass-nav border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons">cake</span>
+</div>
+<span class="text-xl font-bold tracking-tight text-primary">TIỆM BÁNH HẠNH</span>
+</div>
+<div class="hidden md:flex gap-8 font-medium">
+<a class="hover:text-primary transition-colors" href="#about">Về chúng tôi</a>
+<a class="hover:text-primary transition-colors" href="#menu">Thực đơn</a>
+<a class="hover:text-primary transition-colors" href="#reviews">Khách hàng</a>
+<a class="hover:text-primary transition-colors" href="#order">Đặt bánh</a>
+</div>
+<a class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:opacity-90 transition-opacity" href="#order">
+                Đặt ngay
+            </a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Bánh kem sinh nhật cao cấp" class="w-full h-full object-cover" data-alt="A beautiful custom designed birthday cake with pastel frosting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAat_rW5_cKG6vW7S8wt6BbllMgNsjzC7A9jqPFTUTOhMGWzjmPVqir0IbyugLFYIjbOgjQ3uLoVujNj59eWnMt-d8iWcooMd0v702WZVimHpOS0qxDGzelQJbxrSRZoAY9cVUg6zvhqVMsVDw92G_SRP5SObELlRTTYCeqEVmvreH3s7vCCsWQavygVlOpBOMCg44qBXqSoI0J_10NfbjeFWPwGWaSYQxEll5yPAhqGpwBSh-Al8qJ_C65nj3fJnH0OI1hPA7e4ZLw"/>
+<div class="absolute inset-0 bg-gradient-to-r from-white/90 via-white/50 to-transparent dark:from-background-dark/90 dark:via-background-dark/50"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 w-full">
+<div class="max-w-2xl">
+<span class="inline-block py-1 px-3 rounded-full bg-primary/10 text-primary text-sm font-bold mb-4">EST. 2017 • HO CHI MINH CITY</span>
+<h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6">Tiệm Bánh Ngọt Hạnh - <span class="text-primary">Bánh kem handmade</span></h1>
+<p class="text-lg md:text-xl text-accent-brown/80 dark:text-gray-300 mb-8 leading-relaxed">
+                    Hương vị Pháp tinh tế qua bàn tay Chef Hạnh. Mỗi chiếc bánh là một tác phẩm nghệ thuật, được chăm chút tỉ mỉ cho những khoảnh khắc ngọt ngào nhất của bạn.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-center hover:scale-105 transition-transform" href="#order">Đặt bánh ngay</a>
+<a class="bg-white/80 dark:bg-white/10 backdrop-blur-md border border-primary/20 text-accent-brown dark:text-white px-8 py-4 rounded-xl font-bold text-center hover:bg-white transition-colors" href="#menu">Xem menu</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pain Points -->
+<section class="py-20 bg-accent-cream dark:bg-background-dark/50">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid md:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-white/5 p-8 rounded-2xl border border-primary/5 text-center shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-primary text-3xl">factory</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Nói không với đại trà</h3>
+<p class="text-accent-brown/70 dark:text-gray-400">Thay vì những chiếc bánh sản xuất công nghiệp vô hồn, chúng tôi mang đến hương vị tươi mới mỗi ngày.</p>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-2xl border border-primary/5 text-center shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-primary text-3xl">brush</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Đúng mẫu 100%</h3>
+<p class="text-accent-brown/70 dark:text-gray-400">Nỗi lo bánh thực tế khác xa ảnh quảng cáo sẽ tan biến với sự tỉ mỉ của đội ngũ nghệ nhân.</p>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-2xl border border-primary/5 text-center shadow-sm">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+<span class="material-icons text-primary text-3xl">timer</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Không chờ đợi lâu</h3>
+<p class="text-accent-brown/70 dark:text-gray-400">Quy trình chuyên nghiệp giúp bạn nhận bánh đúng hẹn, giữ trọn vẹn sự tươi ngon và bất ngờ.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto px-4">
+<div class="flex flex-col md:flex-row items-center gap-16">
+<div class="flex-1 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full z-0"></div>
+<img alt="Chef Hạnh tại tiệm bánh" class="rounded-3xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5]" data-alt="Professional pastry chef in a clean white apron decorating a cake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwheMnKfZ4-8od9OytUtmXtvaLdIb7CvlsU820q2LoVYcnM-BKwxZpBhpPbWG97-FpP-9Ck76ggeRgM42g9TCgPoo-TadcIyBr7M-nLpyXkhxLIzQLrSuUGb5BM1ohBTu_94i3lQ7uYtEMy7A11DZBnAbpeHFmW2RJLFYLBn8oXlnP3XA6w6_u9spsfl0_wmFkpMWOeoCKMwxkefyU_xVgzWq2C0350EPn85LAiXt6z1miV0fJ4KzkKxSLWqADPUh2cCTtST5fAwqq"/>
+<div class="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-2xl z-20 hidden md:block">
+<p class="text-2xl font-bold">7+ Năm</p>
+<p class="text-sm opacity-90">Kinh nghiệm tại Pháp</p>
+</div>
+</div>
+<div class="flex-1">
+<h2 class="text-4xl font-bold mb-6">7 năm mang hương vị Pháp về Việt Nam</h2>
+<p class="text-lg mb-6 leading-relaxed opacity-80">
+                        Từng tốt nghiệp tại học viện ẩm thực danh tiếng tại Paris, Chef Hạnh luôn ấp ủ ước mơ mang những kỹ thuật làm bánh đỉnh cao của Pháp kết hợp cùng nguyên liệu tươi ngon nhất của Việt Nam.
+                    </p>
+<p class="text-lg mb-8 leading-relaxed opacity-80">
+                        Tại Tiệm Bánh Ngọt Hạnh, mỗi lớp kem, mỗi miếng mứt đều được chế biến hoàn toàn thủ công. Chúng tôi không chỉ bán bánh, chúng tôi gửi gắm niềm đam mê và tâm huyết vào từng hương vị.
+                    </p>
+<div class="grid grid-cols-2 gap-6">
+<div class="flex items-center gap-3">
+<span class="material-icons text-primary">verified</span>
+<span class="font-semibold">Nguyên liệu nhập khẩu</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-icons text-primary">favorite</span>
+<span class="font-semibold">Làm mới mỗi ngày</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bakery Ambience -->
+<section class="py-20 bg-accent-cream dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Ghé thăm không gian của Hạnh</h2>
+<p class="opacity-70">Nơi những mẻ bánh thơm ngon được ra đời mỗi sáng</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
+<img class="rounded-xl h-64 w-full object-cover" data-alt="Modern clean bakery kitchen interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8Sz5oE106-c3ld2vSm1wrXjQ-Xs6iPl4TQnk_5oVnjHkpXsw8GXJK0mQ13cnl-dAiJnYgq6IVyu9F41ltmKMS3dcq2VtbZ-c0956MKSkhnykng_m91tkOH0jLY06F333ifFA0VinR-LmT4k018qLvXY1FUF_6p0asY-CNuXYSQGjEllyYrx8U5QD_1ZkokaGrR_mWPhio_wi83gZOdG9ciWKHDKzBEQsaSwifNjBr8J51Ng9u4vzFxcTQqr4gwhobw5gvkFETYnhA"/>
+<img class="rounded-xl h-64 w-full object-cover mt-8" data-alt="Charming cake display case full of pastries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3yJuedqbcmESFEotwoq2ekJWohYF0IrNjVcDLmiqlNx7mm3LPjtmVrvr-Isn2bFikFG0vU2mp4PaAe8JfZxcrg9wlnQ6FpjIUqQ69t8lSbRe4-8ECshEE2QRW-Yz3T3efSLdwHrQgrmP5iZrARE-J-7ZOQSxZ1D99VWNnJ2AyJ--0wNNOGVf6nDwPhprhZ_Jp9w3zCPT25fS02IyD6Lzq2l8nj53aTTTlcAHG2xpyaHr50Ttx2x26MXTtg8Fk99C5REzT5j3Pi2fm"/>
+<img class="rounded-xl h-64 w-full object-cover" data-alt="Wooden bakery order counter and cafe seating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBExxAjnO7kY0R2Q7zH8RAnDtni4ZdL2FXDgicFTUc3bZJ31rtWiLmJDkGXswHyJVXnKcoTe6b3tsf-lKWac79kHSJMnXI1wMGR5DS-6EzI_a8aAf_OJX5425H0t4VUAABhvUDI9Ib3fSFqD1TscwgIHmVDdOa3R4kU_OpfDfEj-pCPQDE1HrrKIrI3CvdyL1bII_B2URKJSqdWUPnHmPaeThHfNhNhls3yzNaeewZUC1FxPdd9FisXreZUVGw5e2Zjh-rQUBkZuTU_"/>
+<img class="rounded-xl h-64 w-full object-cover mt-8" data-alt="Cozy small seating corner in a bakery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYxhDzZhitgKOeaS6TaUK67B9c5UHm1GPbzeFNwSu5hFYqH4V2CDbCXQzXfRdHBDVjqpb3KgePI1Ks4bEPSlgsa3EcVbAlj21FO8Vg0EXHvOAOIEJqnXsHkn1P-vXntGupinJWPgOOijFCOQ2H4vXWw64XH3wOeRYdH9APxUT7PMmzVSjdeAZiwM4uU6BRMxpiLN5N1U-q8fKY8Gu-lV9dA0eexJL0Hmc9HCOfOtsrd21A-BMPzglrSqvRnxBpQGy5hkPLKKb_D7WA"/>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center">
+<span class="material-icons text-primary text-4xl mb-3">pan_tool</span>
+<span class="font-bold">Handmade</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-icons text-primary text-4xl mb-3">public</span>
+<span class="font-bold">Nguyên liệu Pháp</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-icons text-primary text-4xl mb-3">coffee</span>
+<span class="font-bold">Cà phê miễn phí</span>
+</div>
+<div class="flex flex-col items-center text-center">
+<span class="material-icons text-primary text-4xl mb-3">local_shipping</span>
+<span class="font-bold">Giao hàng nhanh</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Highlights -->
+<section class="py-24" id="menu">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-4xl font-bold mb-12 text-center">Thực đơn nổi bật</h2>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-lg border border-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Custom designer birthday cake" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCllWRQH-CJW939T7Gsv8Opxnz034xvivaBrHltTg54irjuM6F3ROQZxfmcqmqLVeCEOkFuwTNARHOlSJSLaJUBWwtr8a0OVXVkXArxDQCvdwoeEoC2Gw4E6COMWWSrsuA-x3z4hGP4m48KkFJ1_3o4t3peFZ08pyv1TiMbb-ogKR3xK8UMXHL54S-WKt9RPR58fNqHUxUEkIJTZs1PvXSoQ5Gihw3yyb8NU23Evuq3qi2j39a3qOYk9KkQ2zTWigowXC8uVLf3cD9y"/>
+<div class="absolute top-4 right-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">Best Seller</div>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Bánh Sinh Nhật Custom</h3>
+<p class="text-sm opacity-60 mb-4 line-clamp-2">Thiết kế riêng theo yêu cầu, phong cách Hàn Quốc/Pháp tối giản.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">300k - 800k</span>
+<button class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-icons text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-lg border border-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fruit mousse cake slice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHKEKZvvEIWuW1iEI0e3sPSgJXb_RoFEW6atu6q5ML_Olm7fatRQ9eK1hYf9wgsPRzOgBtxkAm1nStx9vDk3ZUPNYDBbczBKB1W63oAiWd7u3a1EJ8wAgVw4nqu6SY0W_bpe09EhQaMWA4jieJTEK_Eg7AzMHxMtrmg4AffCODqOKxWzGJqav9hN2rqV9Z3cwp-NMRk6z4aT0QyTKYeNpYvLTh3oZqtllx8KkziptOvbW_zsyN7TLbvoLP8Fn0ZYWD3_F9b1smjp7e"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Mousse Cake Trái Cây</h3>
+<p class="text-sm opacity-60 mb-4 line-clamp-2">Lớp mousse mịn màng kết hợp cùng trái cây tươi theo mùa.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">250k</span>
+<button class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-icons text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-lg border border-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Box of colorful macarons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhdPYze3mftcw3o9smcjSs2nPb1RS3VCLgUtltn87UGumcnYL4eWgaZhXfdIhZi4MmJDSbLI3y1NPu-6pu9178FKQkxUGnFmcOxDdEM9tSKmVOKcDzN117ZpM0GDoOe2YKzChYBub76v5DXTxWn7nEeggEyQMvdGXsgAf1YSf1jxUGMc-FgP9M7Rw_oqBZMY6adqRZDzsdePQ4Anu2fhW8ZyuTgOTOBiWUezmIDA5hHaESH7e9OGJX73H1xDhhuV81oEtdyQl7rzXj"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Hộp Quà Macaron</h3>
+<p class="text-sm opacity-60 mb-4 line-clamp-2">6 vị đặc trưng kiểu Pháp, ngọt thanh không gắt.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">150k</span>
+<button class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-icons text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group bg-white dark:bg-white/5 rounded-2xl overflow-hidden shadow-lg border border-primary/5">
+<div class="relative overflow-hidden aspect-square">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Fresh golden butter croissants" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIbWlXiFY4E2o-ZHlPf9rQGD85IXNNnr7u1Q5oLtUxYWkGdYjy7u2v5oRKnAL60p8ZkYv1F_wpPs-8M_0yKObXglQy60JBGgWKcEqpgNUMiXkKWeMtyM8BuOOdS8MESQycrl1V4cyhtH32w20IpEXz0qHmqsvwtDeT692FFhMRTQa-WL403x6-o8O6MPpbaR8utDmoKVsucn-t01WPPn7-2I0xh_fNR6UKOUjtPS-uYvZrsuukxQ_B_Itbx1k2g-7mbNru_QYsQ4_X"/>
+</div>
+<div class="p-6">
+<h3 class="text-xl font-bold mb-2">Croissant Bơ Pháp</h3>
+<p class="text-sm opacity-60 mb-4 line-clamp-2">Giòn tan nhiều lớp, thơm nồng mùi bơ Isigny cao cấp.</p>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">35k</span>
+<button class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-icons text-sm">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Advantages -->
+<section class="py-20 bg-primary/5">
+<div class="max-w-7xl mx-auto px-4">
+<div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex gap-4">
+<span class="material-icons text-primary">restaurant_menu</span>
+<div>
+<h4 class="font-bold">Đầu bếp chuẩn Pháp</h4>
+<p class="text-sm opacity-70">Chef được đào tạo bài bản từ Paris.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-icons text-primary">shopping_basket</span>
+<div>
+<h4 class="font-bold">Nguyên liệu nhập khẩu</h4>
+<p class="text-sm opacity-70">Sử dụng bơ và socola từ châu Âu.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-icons text-primary">delivery_dining</span>
+<div>
+<h4 class="font-bold">Giao hàng 2 giờ</h4>
+<p class="text-sm opacity-70">Nội thành TP.HCM nhanh chóng.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-icons text-primary">celebration</span>
+<div>
+<h4 class="font-bold">Custom mẫu theo ý</h4>
+<p class="text-sm opacity-70">Hiện thực hóa mọi ý tưởng bánh.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-icons text-primary">security</span>
+<div>
+<h4 class="font-bold">Vệ sinh an toàn</h4>
+<p class="text-sm opacity-70">Quy trình sản xuất khép kín.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<span class="material-icons text-primary">payments</span>
+<div>
+<h4 class="font-bold">Giá cả hợp lý</h4>
+<p class="text-sm opacity-70">Chất lượng cao với mức giá tối ưu.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24" id="reviews">
+<div class="max-w-7xl mx-auto px-4">
+<h2 class="text-4xl font-bold mb-16 text-center">Đánh giá từ khách hàng</h2>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-white dark:bg-white/5 p-8 rounded-2xl shadow-sm border border-primary/10">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-lg italic mb-6">"Bánh ở đây cực kỳ ngon, kem không quá ngọt và mẫu mã thì sang trọng vô cùng. Mình đặt bánh sinh nhật cho mẹ, ai cũng khen hết lời!"</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">CL</div>
+<div>
+<p class="font-bold">Chị Lan</p>
+<p class="text-sm opacity-60">Quận Bình Thạnh</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-white/5 p-8 rounded-2xl shadow-sm border border-primary/10">
+<div class="flex gap-1 text-primary mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-lg italic mb-6">"Mình là fan của Macaron ở đây. Vị bánh chuẩn Pháp, vỏ giòn xốp rỗng. Giao hàng cũng rất cẩn thận, không bị nát bánh."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center font-bold text-primary">BM</div>
+<div>
+<p class="font-bold">Bạn My</p>
+<p class="text-sm opacity-60">Quận 1</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Custom Order Form -->
+<section class="py-24 bg-accent-cream dark:bg-background-dark/50" id="order">
+<div class="max-w-4xl mx-auto px-4">
+<div class="bg-white dark:bg-background-dark p-8 md:p-12 rounded-[2.5rem] shadow-2xl border border-primary/5">
+<div class="text-center mb-10">
+<h2 class="text-3xl font-bold mb-4">Đặt bánh thiết kế riêng</h2>
+<p class="opacity-70">Gửi thông tin để nhận tư vấn và báo giá miễn phí trong 15 phút</p>
+</div>
+<form class="grid md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-bold text-sm ml-1">Họ và Tên</label>
+<input class="w-full bg-background-light dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Nguyễn Văn A" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-bold text-sm ml-1">Số điện thoại</label>
+<input class="w-full bg-background-light dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="0901 234 567" type="tel"/>
+</div>
+<div class="space-y-2">
+<label class="font-bold text-sm ml-1">Loại bánh</label>
+<select class="w-full bg-background-light dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary">
+<option>Bánh Kem Sinh Nhật</option>
+<option>Mousse Cake</option>
+<option>Hộp Macaron</option>
+<option>Khác</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-bold text-sm ml-1">Kích thước</label>
+<select class="w-full bg-background-light dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary">
+<option>Nhỏ (12-14cm)</option>
+<option>Vừa (16-18cm)</option>
+<option>Lớn (20-24cm)</option>
+</select>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="font-bold text-sm ml-1">Ghi chú thiết kế</label>
+<textarea class="w-full bg-background-light dark:bg-white/5 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Mô tả màu sắc, thông điệp trên bánh hoặc đính kèm link ảnh..." rows="4"></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-white py-5 rounded-xl font-bold text-xl hover:shadow-lg hover:opacity-95 transition-all flex items-center justify-center gap-3">
+<span class="material-icons">send</span>
+                        Đặt bánh ngay - Tư vấn miễn phí
+                    </button>
+</form>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-20 bg-primary text-white text-center">
+<div class="max-w-4xl mx-auto px-4">
+<h2 class="text-4xl font-bold mb-6">Đặt bánh ngọt ngào cho người thân yêu!</h2>
+<div class="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
+<div class="flex items-center gap-3">
+<span class="material-icons">location_on</span>
+<span>123 Phan Xích Long, P.2, Q. Bình Thạnh, TP.HCM</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-icons">schedule</span>
+<span>Mở cửa: 08:00 - 20:00 (Hàng ngày)</span>
+</div>
+</div>
+<div class="flex justify-center gap-4">
+<a class="bg-white text-primary px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform" href="tel:0901234567">
+<span class="material-icons text-sm">phone</span> Gọi ngay
+                </a>
+<a class="bg-background-dark text-white px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:scale-105 transition-transform" href="#">
+<span class="material-icons text-sm">chat</span> Chat Zalo
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-12 bg-white dark:bg-background-dark border-t border-primary/10">
+<div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white">
+<span class="material-icons text-sm">cake</span>
+</div>
+<span class="text-lg font-bold tracking-tight text-primary uppercase">Tiệm Bánh Ngọt Hạnh</span>
+</div>
+<p class="opacity-60 max-w-sm mb-6">Trao gửi yêu thương qua từng hương vị bánh thủ công. Chúng tôi cam kết sử dụng nguyên liệu tốt nhất cho sức khỏe của bạn.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-icons">facebook</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-icons">camera_alt</span>
+</a>
+<a class="w-10 h-10 rounded-full border border-primary/20 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-colors" href="#">
+<span class="material-icons">message</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-bold mb-6">Liên kết nhanh</h4>
+<ul class="space-y-4 opacity-70">
+<li><a class="hover:text-primary" href="#">Về chúng tôi</a></li>
+<li><a class="hover:text-primary" href="#">Thực đơn</a></li>
+<li><a class="hover:text-primary" href="#">Chính sách giao hàng</a></li>
+<li><a class="hover:text-primary" href="#">Liên hệ</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6">Hỗ trợ khách hàng</h4>
+<ul class="space-y-4 opacity-70">
+<li>Hotline: 090 123 4567</li>
+<li>Email: tiembanhhanh@gmail.com</li>
+<li>Zalo: Tiệm Bánh Hạnh</li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-primary/5 text-center text-sm opacity-40">
+            © 2024 Tiệm Bánh Ngọt Hạnh. All rights reserved. Designed with love.
+        </div>
+</footer>
+<!-- Floating Action Button -->
+<a class="fixed bottom-6 right-6 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform z-50" href="#">
+<span class="material-icons">chat</span>
+</a>
+</body></html>

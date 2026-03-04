@@ -1,132 +1,63 @@
-import React, { useState } from 'react';
-import { Filter, Search } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
 
-const ThemeStore = () => {
-  const [activeCategory, setActiveCategory] = useState('All');
+function ThemeStore() {
+  const [templates, setTemplates] = useState([]);
 
-  const categories = [
-    { id: 'All', name: 'Tất cả' },
-    { id: 'F&B', name: 'Cafe & Nhà hàng' },
-    { id: 'Beauty', name: 'Spa & Làm đẹp' },
-    { id: 'Retail', name: 'Bán lẻ & Shop' },
-    { id: 'Service', name: 'Dịch vụ' },
-    { id: 'Construction', name: 'Xây dựng & Nội thất' }
-  ];
-
-  const themes = [
-    { id: 1, name: 'Coffee House Luxury', category: 'F&B', image: '#D2691E' },
-    { id: 2, name: 'An Nhiên Spa', category: 'Beauty', image: '#4CAF50' },
-    { id: 3, name: 'Fashion Modern', category: 'Retail', image: '#E91E63' },
-    { id: 4, name: 'Sửa Chữa Nhanh 247', category: 'Service', image: '#005086' },
-    { id: 5, name: 'Nhà Đẹp Architects', category: 'Construction', image: '#607D8B' },
-    { id: 6, name: 'Tech Store Pro', category: 'Retail', image: '#2196F3' },
-    { id: 7, name: 'Healthy Food', category: 'F&B', image: '#8BC34A' },
-    { id: 8, name: 'Luật Sư Riêng', category: 'Service', image: '#795548' },
-  ];
-
-  const filteredThemes = activeCategory === 'All' 
-    ? themes 
-    : themes.filter(t => t.category === activeCategory);
+  useEffect(() => {
+    // Load templates list from public/templates.json
+    fetch('/templates.json')
+      .then(res => res.json())
+      .then(data => setTemplates(data.templates || []))
+      .catch(err => console.error('Error loading templates:', err));
+  }, []);
 
   return (
-    <div className="page-container" style={{ paddingTop: '80px', paddingBottom: '4rem', backgroundColor: '#f8fafc' }}>
-      <div className="container">
+    <div className="theme-store" style={{ paddingTop: '80px', minHeight: '80vh' }}>
+      <div className="max-w-6xl mx-auto px-4 py-20">
+        <h1 className="text-4xl font-bold mb-12 text-center">Kho Giao Diện Website</h1>
         
-        {/* Page Header */}
-        <div style={{ textAlign: 'center', padding: '3rem 0' }}>
-          <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Kho Giao Diện Website Mẫu</h1>
-          <p style={{ maxWidth: '700px', margin: '0 auto', fontSize: '1.1rem' }}>
-            Hơn 500+ mẫu giao diện chuyên nghiệp, chuẩn SEO, tối ưu hiển thị cho mọi ngành nghề kinh doanh.
-          </p>
-        </div>
-
-        {/* Filter Bar */}
-        <div style={{ 
-          display: 'flex', 
-          flexWrap: 'wrap',
-          gap: '1rem', 
-          justifyContent: 'center', 
-          marginBottom: '3rem',
-          backgroundColor: 'white',
-          padding: '1rem',
-          borderRadius: '12px',
-          boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
-        }}>
-          {categories.map(cat => (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              style={{
-                padding: '0.6rem 1.25rem',
-                borderRadius: '50px',
-                border: activeCategory === cat.id ? 'none' : '1px solid #e2e8f0',
-                backgroundColor: activeCategory === cat.id ? 'var(--primary-color)' : 'white',
-                color: activeCategory === cat.id ? 'white' : 'var(--text-color)',
-                fontWeight: '500',
-                cursor: 'pointer',
-                transition: 'all 0.2s'
-              }}
-            >
-              {cat.name}
-            </button>
-          ))}
-        </div>
-
-        {/* Themes Grid */}
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', 
-          gap: '2rem'
-        }}>
-          {filteredThemes.map(theme => (
-            <div key={theme.id} style={{ 
-              backgroundColor: 'white', 
-              borderRadius: '12px', 
-              overflow: 'hidden', 
-              boxShadow: '0 10px 15px -3px rgba(0,0,0,0.05)',
-              transition: 'transform 0.3s',
-              cursor: 'pointer'
-            }}
-            onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
-            onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-            >
-              <div style={{ 
-                height: '220px', 
-                backgroundColor: '#eee', 
-                position: 'relative',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                 {/* Placeholder for Theme Image */}
-                 <div style={{ width: '80%', height: '80%', backgroundColor: theme.image, opacity: 0.2, borderRadius: '8px' }}></div>
-                 <div style={{ 
-                   position: 'absolute', 
-                   bottom: '10px', 
-                   right: '10px', 
-                   backgroundColor: 'rgba(0,0,0,0.7)', 
-                   color: 'white', 
-                   padding: '4px 8px', 
-                   borderRadius: '4px', 
-                   fontSize: '0.8rem' 
-                }}>
-                   Xem trước
-                 </div>
-              </div>
-              <div style={{ padding: '1.5rem' }}>
-                <span style={{ fontSize: '0.8rem', color: '#888', textTransform: 'uppercase', letterSpacing: '1px' }}>{theme.category}</span>
-                <h3 style={{ fontSize: '1.2rem', margin: '0.5rem 0' }}>{theme.name}</h3>
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '1rem' }}>
-                  <span style={{ color: 'var(--primary-color)', fontWeight: 'bold' }}>1.490.000đ</span>
-                  <button className="btn btn-outline" style={{ padding: '0.4rem 1rem', fontSize: '0.9rem' }}>Chi tiết</button>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {templates.length > 0 ? (
+            templates.map((template, index) => (
+              <div 
+                key={index} 
+                className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
+              >
+                <div className="h-48 bg-gradient-to-r from-primary/20 to-primary/10 flex items-center justify-center">
+                  <img 
+                    src={template.thumbnail || 'https://via.placeholder.com/400x300'} 
+                    alt={template.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-3">{template.name}</h3>
+                  <p className="text-slate-600 mb-6 text-sm">{template.description}</p>
+                  <div className="flex gap-3">
+                    <a
+                      href={template.preview || `/templates/${template.id}/index.html`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex-1 bg-primary text-white py-2 rounded-lg font-semibold text-center hover:shadow-lg transition-all"
+                    >
+                      Xem Demo
+                    </a>
+                    <button className="flex-1 border-2 border-primary text-primary py-2 rounded-lg font-semibold hover:bg-primary/5 transition-all">
+                      Chọn
+                    </button>
+                  </div>
                 </div>
               </div>
+            ))
+          ) : (
+            <div className="col-span-full text-center py-12">
+              <p className="text-slate-500">Đang tải danh sách giao diện...</p>
             </div>
-          ))}
+          )}
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ThemeStore;

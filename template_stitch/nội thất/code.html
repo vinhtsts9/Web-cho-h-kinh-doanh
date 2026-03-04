@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nội Thất Gia Phúc - Thiết kế thi công trọn gói</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f2a60d",
+                        "background-light": "#f8f7f5",
+                        "background-dark": "#221c10",
+                        "slate-custom": "#334155",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .hero-overlay { background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.2) 100%); }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-custom dark:text-gray-200">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+<span class="text-white font-extrabold text-xl">GP</span>
+</div>
+<span class="text-xl font-extrabold tracking-tight text-slate-800 dark:text-white">GIA PHUC <span class="text-primary">INTERIOR</span></span>
+</div>
+<div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+<a class="hover:text-primary transition-colors" href="#">Trang chủ</a>
+<a class="hover:text-primary transition-colors" href="#portfolio">Dự án</a>
+<a class="hover:text-primary transition-colors" href="#process">Quy trình</a>
+<a class="hover:text-primary transition-colors" href="#about">Về chúng tôi</a>
+<a class="bg-primary text-white px-6 py-2.5 rounded-lg hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20" href="#contact">Liên hệ ngay</a>
+</div>
+<div class="md:hidden">
+<span class="material-icons text-primary">menu</span>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen min-h-[700px] flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Modern Luxury Living Room" class="w-full h-full object-cover" data-alt="Modern high-end 3D render of a living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcwGZB6AsJ5WLfuJodmReehAqCeCkP4Mso0UWcNbTMAmd1etQR3I_faErV7qsL76BWuptNs-0jBXCavEMiGU6qj4kT3JkbtBDhlktf9d8iC8vzCRiFcFTTu07tF1xulQhbvGKDT2pcz1NAnOrK8jtv1lz3otw4fngxicCXwicWRLoQe4InrKKFM5DLHZDV99qjQ04FT2ixi4okSj4eeZAHGBc5xfQqqwexSpJHaZjf1YrgpmhWvYd6C-zX3ADg8_zqaLmGFtjAStpY"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+<div class="max-w-2xl">
+<div class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-md px-4 py-2 rounded-full border border-primary/30 mb-6">
+<span class="material-icons text-primary text-sm">verified</span>
+<span class="text-primary text-xs font-bold uppercase tracking-widest">10 năm kinh nghiệm trong ngành</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-extrabold text-white leading-tight mb-6">
+                    Nội Thất Gia Phúc <br/>
+<span class="text-primary">Thiết kế thi công trọn gói</span>
+</h1>
+<p class="text-lg text-gray-200 mb-10 leading-relaxed max-w-xl">
+                    Chuyên gia kiến tạo không gian sống đẳng cấp với hơn 200+ dự án đã hoàn thiện. Chúng tôi biến căn hộ thô thành tổ ấm hoàn mỹ.
+                </p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a class="bg-primary text-white px-8 py-4 rounded-xl font-bold text-lg text-center hover:scale-105 transition-transform shadow-xl shadow-primary/30" href="#portfolio">Xem Portfolio</a>
+<a class="bg-white/10 backdrop-blur-md text-white border-2 border-white/30 px-8 py-4 rounded-xl font-bold text-lg text-center hover:bg-white hover:text-slate-900 transition-all" href="#contact">Tư vấn miễn phí</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Pain Points -->
+<section class="py-24 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl font-extrabold text-slate-800 dark:text-white mb-4">Bạn đang lo lắng điều gì?</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="p-8 bg-background-light dark:bg-slate-800/50 rounded-2xl border-l-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons text-primary">warning_amber</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Thi công sai bản vẽ</h3>
+<p class="text-slate-600 dark:text-gray-400">Lo ngại kết quả thực tế không giống như bản thiết kế 3D lung linh ban đầu.</p>
+</div>
+<div class="p-8 bg-background-light dark:bg-slate-800/50 rounded-2xl border-l-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons text-primary">payments</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Phát sinh chi phí</h3>
+<p class="text-slate-600 dark:text-gray-400">Ngân sách bị đội lên quá cao so với dự tính ban đầu do không có kế hoạch rõ ràng.</p>
+</div>
+<div class="p-8 bg-background-light dark:bg-slate-800/50 rounded-2xl border-l-4 border-primary">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<span class="material-icons text-primary">visibility_off</span>
+</div>
+<h3 class="text-xl font-bold mb-3">Thiếu minh bạch</h3>
+<p class="text-slate-600 dark:text-gray-400">Không rõ nguồn gốc vật liệu và tiến độ thi công bị trì trệ không lý do.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark/50 overflow-hidden" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-primary rounded-2xl z-0"></div>
+<img alt="Architect Anh Phuc" class="relative z-10 w-full rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" data-alt="Professional architect posing at a construction site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8lMnBDKvqCVf-03aXLXA7Kh1zzxkdhIEX0rjow8bEBNT_rKhqOHAu2mD6vUEXW9bb2WVoOHhxBZYvdA2nrV_F_6Hlr0-AFxyjGlIsd2xHv1dg1skMcZiV0uGxbFa9sv0zQa9stAg-r6R5kbPDw3KMnwSIQK_Vdw1FQ88WDBvQdiSD3X1HPSdBXYqCulh1XA758N0Akx33RTWzG-8NEVRcfcIziXRNFVM8D_SRbuMg7Bk7NoGi0ZtgCOhY66YJjkRQcm4a2BGoo4sz"/>
+<div class="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded-xl shadow-xl z-20 border border-primary/20">
+<p class="text-primary font-extrabold text-3xl">10+</p>
+<p class="text-xs font-bold text-slate-500 dark:text-gray-400 uppercase tracking-widest">Năm kinh nghiệm</p>
+</div>
+</div>
+<div>
+<h2 class="text-4xl font-extrabold text-slate-800 dark:text-white mb-6 leading-tight">10 năm biến ước mơ thành hiện thực</h2>
+<p class="text-lg text-slate-600 dark:text-gray-400 mb-6 leading-relaxed">
+                        Tôi là <span class="text-primary font-bold">Phúc (Kiến trúc sư trưởng)</span>. Với tâm niệm mỗi ngôi nhà là một tác phẩm nghệ thuật, tôi trực tiếp giám sát từng công đoạn từ phác thảo ý tưởng đến những đường chỉ phào cuối cùng.
+                    </p>
+<p class="text-lg text-slate-600 dark:text-gray-400 mb-8 leading-relaxed">
+                        Tại Gia Phúc, chúng tôi không chỉ xây dựng căn phòng, chúng tôi kiến tạo không gian để bạn thực sự gọi là "Nhà".
+                    </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold">Trực tiếp thiết kế</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold">Giám sát 24/7</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold">Vật liệu chính hãng</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons text-primary">check_circle</span>
+<span class="font-semibold">Tận tâm 100%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Grid -->
+<section class="py-24 bg-white dark:bg-background-dark" id="portfolio">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="text-4xl font-extrabold text-slate-800 dark:text-white mb-4">Dự án tiêu biểu</h2>
+<p class="text-slate-600 dark:text-gray-400">Khám phá các không gian chúng tôi đã kiến tạo</p>
+</div>
+<div class="hidden md:block">
+<button class="flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
+                        Xem tất cả dự án <span class="material-icons">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Căn hộ 2PN Nhật Bản" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist Japanese style living room design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALgg3IhxS5GF7ucHKwyhYBfSqRyWFzGEHqB96KWCPx0qc-6ZOUfvEAD4dom4bbksVR6L_F7YsZ9NAjZ3PZ2RAeppLfrrMdGSv6feHmv0gPT1_S8UCeu8ah78Ks8QPvPlXP6X8kr7TfsiwuwGvzoywDQhN1uZiGy3jgtuKag0mr32iLNKwbPrjIyunFe3cF661tB6ua6VaxmwSP1aCu0CVATVHDyWjXN4buS0W-08DBkHnl7pGvt1cUPEf5K4wG46-SYB30BNnB_Emy"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Japandi</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Căn hộ 2PN - Vinhomes</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">85.000.000đ</span>
+<span class="text-white/60 text-xs">75m²</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Nhà phố hiện đại" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern luxury kitchen and dining area" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBavow5dv979yL_hdRA_7QohJl5zcvCBJtibn5ujJ395f6lwveiDUP_afsGemkzUp8ZIkDvEyqsZsSQ8_NtaH6Zdu8ucsIzli6J9-iopGtpEy4RCQibPT8fr1ddZyP0ugrKtn3D5y6T38xGO3dl3na0LMZ6mayDAqBGtpzpIIphiEoUuv3xerFFfr2fyALQlZYk1gH1b1nNR0LWZIqekwIBecp_zBAXxCDZLIb32JyM87YO-WiGrLxJ44oC52mTEDXPB1bjtDeqvw6"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Modern Luxury</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Nhà phố Thủ Dầu Một</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">210.000.000đ</span>
+<span class="text-white/60 text-xs">120m²</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Studio tối giản" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Minimalist small studio apartment design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6PbLlh_UTStCawaSkBgkesent0o1wU46StCCHjhvdpWsJH7aM1uOsTvBVZPjkPxCF9qNlyy-MfjJKn-M8QXzL6CIJBNUkf_kt4CWAoHdDTaOBamTyeRRVLPOFyOIOdfYhdl7Aj2onLXSIUD5v6jev3F4IMDSjRoMvYfmDi-5AezMLdFJWcSzxqYFff5tllcrpPrU3vUyBXx1pA0RG1NcQ9e_TjGVIP-_iLPhTM7xYFrIqRMG1HrkKkL_BEodQy_6JRVsI-TNnjblU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Minimalist</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Studio Landmark 81</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">55.000.000đ</span>
+<span class="text-white/60 text-xs">45m²</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Phòng ngủ Master" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Elegant master bedroom interior design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-r4bESZsSoYPQRRuRv3UbUiMnp4lV8dZFJ8ZJsvv5Sw-7qhp2GgEzlj7gwLGFHX56uboeVZvvhuPa4YVQk-3sTg-BUz4W9J5RNcQPZa1G9VJr9-1O4d5o89W9y1o7UPArjKr3c2M8TXYMTgM9vecu2dIPDW4cYibYshPjx68jIkmO6psIwSt6ETYAK1b5Twsz9HGl0taUbjfpXTmZO0Gg5El9c_XFo2XDWz3NLIqlOJUj-Jouv7V12NBK51iyqec-KZDAX7KEI6gP"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Neoclassical</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Căn hộ Sunview Town</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">95.000.000đ</span>
+<span class="text-white/60 text-xs">68m²</span>
+</div>
+</div>
+</div>
+<!-- Project 5 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Villa sang trọng" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Luxury villa terrace and swimming pool" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApf39GCNdAz5DLyuU0qTebI93BAbolRmNTdBkfh81WJ7aC__mv0usS6dfshihFQKClebO9_DmssRtAVGEKdhHCO80B7p4W8IYMK-m94BDdJk_b25J9Y12g0klK9RZ-pxRun2ka5Gh2-_9Ix26V1ZYlzV5ZIhmMq8sKfZYsOrmdP73kUPsfk0y0LwEPUKtAzCODVywrhT1yeXrg7RQcLH5eHuVePagRzpd3zuW7AiNBp_ssaLJ16K9sE1y8hu3JhPfgmqSAXEwdrmVK"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Indochine</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Villa Lái Thiêu</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">Liên hệ</span>
+<span class="text-white/60 text-xs">250m²</span>
+</div>
+</div>
+</div>
+<!-- Project 6 -->
+<div class="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-lg">
+<img alt="Căn hộ 1PN" class="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Cozy one bedroom apartment interior" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-EHAS5MktxyNqvn2E0oNDOCuC_oOYGHUdigHBXzQRYkUkaSpG_dnrdnnUDD3IbxHYLjDjdjnZoSNp7bK7zVgaqhJBj8Wl4fS6bUwJoQmLDyM1yPshhN9iPwqVy7IliWHBKgpSlhXxJ9TscUVWxHqQoPaHti1HlPKldrI3aZs4FT_eFSaWa0N8E3uBPEirjCP4PyLrH25hjL0hUDh6FuvhQECtssI3pJMOF1yYWhJ6oWbQrgedyO9JhKhf_un2V_l_WKSi4ynIcGa"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">Scandinavian</span>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-6">
+<h3 class="text-white text-xl font-bold mb-1">Căn hộ Astral City</h3>
+<div class="flex justify-between items-center">
+<span class="text-primary font-bold text-lg">72.000.000đ</span>
+<span class="text-white/60 text-xs">52m²</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Work Process -->
+<section class="py-24 bg-background-light dark:bg-background-dark/50" id="process">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-slate-800 dark:text-white mb-4">Quy trình làm việc chuyên nghiệp</h2>
+<p class="text-slate-600 dark:text-gray-400">Tận tâm trong từng bước nhỏ nhất để tạo ra kết quả lớn nhất</p>
+</div>
+<div class="relative">
+<!-- Connector Line -->
+<div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-primary/20 -translate-y-1/2"></div>
+<div class="grid md:grid-cols-5 gap-8 relative">
+<!-- Step 1 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 z-10 group-hover:bg-primary transition-colors">
+<span class="text-xl font-extrabold text-primary group-hover:text-white">1</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Tư vấn</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Khảo sát hiện trạng và lấy yêu cầu khách hàng.</p>
+</div>
+<!-- Step 2 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 z-10 group-hover:bg-primary transition-colors">
+<span class="text-xl font-extrabold text-primary group-hover:text-white">2</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Báo giá</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Lên phương án sơ bộ và dự toán chi tiết.</p>
+</div>
+<!-- Step 3 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 z-10 group-hover:bg-primary transition-colors">
+<span class="text-xl font-extrabold text-primary group-hover:text-white">3</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Hợp đồng</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Ký kết hợp đồng và thiết kế 3D miễn phí.</p>
+</div>
+<!-- Step 4 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 z-10 group-hover:bg-primary transition-colors">
+<span class="text-xl font-extrabold text-primary group-hover:text-white">4</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Thi công</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Sản xuất tại xưởng và lắp đặt tại công trình.</p>
+</div>
+<!-- Step 5 -->
+<div class="flex flex-col items-center text-center group">
+<div class="w-16 h-16 bg-white dark:bg-slate-800 rounded-full border-4 border-primary flex items-center justify-center mb-6 z-10 group-hover:bg-primary transition-colors">
+<span class="text-xl font-extrabold text-primary group-hover:text-white">5</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Bàn giao</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Nghiệm thu quyết toán và bảo hành 2 năm.</p>
+</div>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8 mt-20">
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm">
+<span class="material-icons text-primary bg-primary/10 p-3 rounded-lg">view_in_ar</span>
+<div>
+<h4 class="font-bold">Thiết kế 3D Miễn Phí</h4>
+<p class="text-xs text-slate-500 mt-1">Hoàn tiền 100% phí thiết kế khi ký hợp đồng thi công.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm">
+<span class="material-icons text-primary bg-primary/10 p-3 rounded-lg">receipt_long</span>
+<div>
+<h4 class="font-bold">Báo Giá Chi Tiết</h4>
+<p class="text-xs text-slate-500 mt-1">Cam kết không phát sinh bất kỳ chi phí nào sau hợp đồng.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-6 bg-white dark:bg-slate-800 rounded-xl shadow-sm">
+<span class="material-icons text-primary bg-primary/10 p-3 rounded-lg">verified_user</span>
+<div>
+<h4 class="font-bold">Bảo Hành 2 Năm</h4>
+<p class="text-xs text-slate-500 mt-1">Hỗ trợ bảo trì trọn đời, xử lý sự cố trong vòng 24h.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Advantages -->
+<section class="py-24 bg-white dark:bg-background-dark">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-extrabold text-slate-800 dark:text-white mb-4">Tại sao nên chọn Gia Phúc?</h2>
+<div class="w-20 h-1 bg-primary mx-auto"></div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-12">
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">architecture</span>
+</div>
+<h3 class="text-xl font-bold mb-2">KTS 10 Năm Kinh Nghiệm</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Trực tiếp tư vấn và xử lý mọi vấn đề kỹ thuật khó.</p>
+</div>
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">schedule</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Đúng Tiến Độ 100%</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Bồi thường thiệt hại nếu chậm trễ ngày bàn giao.</p>
+</div>
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">sell</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Giá Cạnh Tranh</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Giá tại xưởng sản xuất trực tiếp, không qua trung gian.</p>
+</div>
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">inventory_2</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Vật Liệu Cao Cấp</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Sử dụng gỗ An Cường, phụ kiện Hafele, Blum chính hãng.</p>
+</div>
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">support_agent</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Hỗ Trợ 24/7</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Giải đáp mọi thắc mắc ngay lập tức suốt quá trình thi công.</p>
+</div>
+<div class="text-center group">
+<div class="inline-flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-primary/5 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+<span class="material-icons text-4xl">style</span>
+</div>
+<h3 class="text-xl font-bold mb-2">Đa Dạng Phong Cách</h3>
+<p class="text-sm text-slate-500 dark:text-gray-400">Cập nhật xu hướng thiết kế mới nhất toàn cầu.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-slate-900 text-white overflow-hidden relative">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<h2 class="text-4xl font-extrabold mb-16 text-center">Khách hàng nói về chúng tôi</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
+<div class="flex text-primary mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-300 italic mb-6">"Rất hài lòng với cách làm việc của anh Phúc. Căn hộ bàn giao đúng hạn, chất lượng thi công sắc sảo. Sẽ giới thiệu cho bạn bè."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">HT</div>
+<div>
+<p class="font-bold">Chị Hoàng Thanh</p>
+<p class="text-xs text-gray-400">Vinhomes Grand Park, Q9</p>
+</div>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
+<div class="flex text-primary mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-300 italic mb-6">"Giá cả minh bạch, không phát sinh thêm chi phí. Đội ngũ thi công rất sạch sẽ và lịch sự. Cảm ơn Gia Phúc rất nhiều."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">NM</div>
+<div>
+<p class="font-bold">Anh Nam Minh</p>
+<p class="text-xs text-gray-400">Chung cư Astral City, Bình Dương</p>
+</div>
+</div>
+</div>
+<div class="bg-white/5 backdrop-blur-md p-8 rounded-2xl border border-white/10">
+<div class="flex text-primary mb-4">
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+<span class="material-icons">star</span>
+</div>
+<p class="text-gray-300 italic mb-6">"Thiết kế 3D rất đẹp, thực tế thi công còn đẹp hơn. Phụ kiện Hafele dùng cực kỳ êm. Rất đáng đồng tiền bát gạo."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold">KV</div>
+<div>
+<p class="font-bold">Chị Khánh Vân</p>
+<p class="text-xs text-gray-400">Nhà phố Thủ Dầu Một</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Consultation Form Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="bg-white dark:bg-slate-800 rounded-3xl shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-primary/10">
+<div class="lg:w-2/5 bg-primary p-12 text-white flex flex-col justify-between">
+<div>
+<h2 class="text-4xl font-extrabold mb-6">Nhận tư vấn &amp; Thiết kế 3D Miễn Phí</h2>
+<p class="text-white/80 text-lg mb-10 leading-relaxed">
+                            Đừng ngần ngại để lại thông tin, đội ngũ kiến trúc sư của chúng tôi sẽ liên hệ tư vấn phương án tối ưu nhất cho ngôi nhà của bạn.
+                        </p>
+</div>
+<div class="space-y-6">
+<div class="flex items-center gap-4">
+<span class="material-icons p-3 bg-white/20 rounded-xl">call</span>
+<div>
+<p class="text-sm text-white/60">Hotline tư vấn</p>
+<p class="text-xl font-bold">090x.xxx.xxx</p>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-icons p-3 bg-white/20 rounded-xl">email</span>
+<div>
+<p class="text-sm text-white/60">Email</p>
+<p class="text-lg font-bold">noithatgiaphuc@gmail.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:w-3/5 p-12">
+<form class="space-y-6">
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2">Họ và tên</label>
+<input class="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Nhập tên của bạn" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2">Số điện thoại</label>
+<input class="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Nhập số điện thoại" type="tel"/>
+</div>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2">Loại hình công trình</label>
+<select class="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary">
+<option>Căn hộ chung cư</option>
+<option>Nhà phố</option>
+<option>Biệt thự</option>
+<option>Văn phòng/Cửa hàng</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2">Diện tích (m2)</label>
+<input class="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-xl p-4 focus:ring-2 focus:ring-primary" placeholder="Ví dụ: 75" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2">Ngân sách dự kiến</label>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+<button class="border-2 border-slate-200 dark:border-slate-600 p-2 rounded-lg text-xs hover:border-primary hover:text-primary font-bold" type="button">Dưới 100Tr</button>
+<button class="border-2 border-slate-200 dark:border-slate-600 p-2 rounded-lg text-xs hover:border-primary hover:text-primary font-bold" type="button">100 - 200Tr</button>
+<button class="border-2 border-slate-200 dark:border-slate-600 p-2 rounded-lg text-xs hover:border-primary hover:text-primary font-bold" type="button">200 - 500Tr</button>
+<button class="border-2 border-slate-200 dark:border-slate-600 p-2 rounded-lg text-xs hover:border-primary hover:text-primary font-bold" type="button">Trên 500Tr</button>
+</div>
+</div>
+<button class="w-full bg-primary text-white py-5 rounded-xl font-extrabold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] transition-transform flex items-center justify-center gap-3">
+<span class="material-icons">send</span>
+                            NHẬN TƯ VẤN &amp; THIẾT KẾ 3D MIỄN PHÍ
+                        </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-16 bg-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+<h2 class="text-3xl md:text-5xl font-extrabold mb-8 uppercase tracking-tight">Biến căn nhà mơ ước thành hiện thực!</h2>
+<div class="flex flex-wrap justify-center gap-12">
+<div class="flex items-center gap-3">
+<span class="material-icons border border-white/30 p-2 rounded-full">location_on</span>
+<span class="font-semibold">Bình Dương: 123 Đại Lộ Bình Dương</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-icons border border-white/30 p-2 rounded-full">location_on</span>
+<span class="font-semibold">Hồ Chí Minh: 456 Võ Văn Kiệt, Q1</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-900 text-gray-400 py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+<span class="text-white font-extrabold text-sm">GP</span>
+</div>
+<span class="text-lg font-extrabold tracking-tight text-white uppercase">Gia Phuc <span class="text-primary">Interior</span></span>
+</div>
+<p class="text-sm leading-relaxed mb-6">Đơn vị thiết kế và thi công nội thất trọn gói uy tín hàng đầu khu vực phía Nam. Với 10 năm kinh nghiệm và tâm huyết trong nghề.</p>
+<div class="flex gap-4">
+<a class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><i class="material-icons text-xl">facebook</i></a>
+<a class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><i class="material-icons text-xl">language</i></a>
+<a class="w-10 h-10 bg-white/5 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><i class="material-icons text-xl">camera_alt</i></a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Liên kết nhanh</h4>
+<ul class="space-y-4 text-sm">
+<li><a class="hover:text-primary" href="#">Trang chủ</a></li>
+<li><a class="hover:text-primary" href="#about">Về chúng tôi</a></li>
+<li><a class="hover:text-primary" href="#portfolio">Dự án đã thi công</a></li>
+<li><a class="hover:text-primary" href="#process">Quy trình làm việc</a></li>
+<li><a class="hover:text-primary" href="#">Chính sách bảo hành</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Văn phòng đại diện</h4>
+<ul class="space-y-4 text-sm">
+<li class="flex items-start gap-2">
+<span class="material-icons text-primary text-sm mt-1">location_on</span>
+<span>Số 123 Đường Số 7, KDC Hiệp Thành 3, Thủ Dầu Một, Bình Dương</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-icons text-primary text-sm mt-1">location_on</span>
+<span>789 Xa Lộ Hà Nội, TP. Thủ Đức, TP. Hồ Chí Minh</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Đăng ký nhận tin</h4>
+<p class="text-xs mb-4">Nhận báo giá và xu hướng thiết kế mới nhất hàng tháng.</p>
+<div class="relative">
+<input class="w-full bg-white/5 border-white/10 rounded-lg p-3 text-sm focus:ring-primary focus:border-primary" placeholder="Email của bạn" type="email"/>
+<button class="absolute right-1 top-1 bottom-1 bg-primary text-white px-4 rounded-md hover:bg-opacity-90 transition-all">
+<span class="material-icons text-sm">send</span>
+</button>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-white/10 text-center text-xs">
+<p>© 2023 Nội Thất Gia Phúc. All rights reserved. Designed with passion.</p>
+</div>
+</div>
+</footer>
+<!-- Floating Action Buttons -->
+<div class="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
+<a class="w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform relative group" href="tel:0900000000">
+<span class="material-icons">call</span>
+<span class="absolute right-16 bg-white text-slate-800 px-4 py-2 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap">Gọi điện ngay</span>
+</a>
+<a class="w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform relative group" href="#">
+<span class="material-icons">chat</span>
+<span class="absolute right-16 bg-white text-slate-800 px-4 py-2 rounded-lg text-sm font-bold opacity-0 group-hover:opacity-100 transition-opacity shadow-lg whitespace-nowrap">Zalo Chat</span>
+</a>
+</div>
+</body></html>

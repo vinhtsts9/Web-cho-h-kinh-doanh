@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import PreviewModal from './PreviewModal';
 
-const DemoCard = ({ title, category, color }) => (
+const DemoCard = ({ template, onViewDemo }) => (
   <div style={{ 
     borderRadius: '12px', 
     overflow: 'hidden', 
@@ -9,27 +10,39 @@ const DemoCard = ({ title, category, color }) => (
     transition: 'transform 0.3s ease',
     cursor: 'pointer'
   }}
+  onClick={() => onViewDemo(template)}
   onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-5px)'}
   onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
   >
-    {/* CSS-based UI Preview */}
+    {/* Preview Image or Color */}
     <div style={{ 
       height: '200px', 
-      backgroundColor: '#f3f4f6', 
+      backgroundColor: template.image?.startsWith('#') ? template.image : '#f3f4f6',
       position: 'relative',
       padding: '1rem',
       display: 'flex',
       flexDirection: 'column',
-      gap: '0.5rem'
+      gap: '0.5rem',
+      backgroundImage: !template.image?.startsWith('#') ? `url(${template.image})` : 'none',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      overflow: 'hidden'
     }}>
-      {/* Fake Header */}
-      <div style={{ height: '12px', width: '100%', backgroundColor: color, borderRadius: '4px', opacity: 0.8 }}></div>
-      {/* Fake Hero */}
-      <div style={{ height: '80px', width: '100%', backgroundColor: '#e5e7eb', borderRadius: '4px', marginTop: '0.5rem' }}></div>
-      <div style={{ display: 'flex', gap: '0.5rem', marginTop: '0.5rem' }}>
-        <div style={{ height: '40px', flex: 1, backgroundColor: '#e5e7eb', borderRadius: '4px' }}></div>
-        <div style={{ height: '40px', flex: 1, backgroundColor: '#e5e7eb', borderRadius: '4px' }}></div>
-      </div>
+      {/* Overlay wenn für bessere Lesbarkeit */}
+      {template.image?.startsWith('/') && (
+        <div style={{ 
+          position: 'absolute',
+          inset: 0,
+          backgroundColor: 'rgba(0, 0, 0, 0.3)',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}>
+          <div style={{ color: 'white', textAlign: 'center', fontSize: '0.9rem' }}>
+            Click để xem demo
+          </div>
+        </div>
+      )}
     </div>
     
     <div style={{ padding: '1.5rem' }}>
@@ -41,42 +54,77 @@ const DemoCard = ({ title, category, color }) => (
         fontWeight: '600',
         marginBottom: '0.5rem'
       }}>
-        {category}
+        {template.category}
       </div>
-      <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{title}</h3>
-      <a href="#" style={{ color: 'var(--accent-color)', fontWeight: '500', fontSize: '0.9rem' }}>Xem chi tiết &rarr;</a>
+      <h3 style={{ fontSize: '1.25rem', marginBottom: '0.5rem' }}>{template.name}</h3>
+      <a href="#" onClick={(e) => { e.preventDefault(); onViewDemo(template); }} style={{ color: 'var(--accent-color)', fontWeight: '500', fontSize: '0.9rem' }}>Xem chi tiết &rarr;</a>
     </div>
   </div>
 );
 
 const DemoCards = () => {
+  const [templates, setTemplates] = useState([]);
+  const [selectedTemplate, setSelectedTemplate] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Load templates from JSON
+    fetch('/templates.json')
+      .then(response => response.json())
+      .then(data => {
+        setTemplates(data);
+        setLoading(false);
+      })
+      .catch(error => {
+        console.error('Error loading templates:', error);
+        setLoading(false);
+      });
+  }, []);
+
   return (
-    <section id="demo" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
-      <div className="container">
-        <h2 className="section-title">Kho Giao Diện Mẫu</h2>
-        <p className="section-subtitle">
-          Chọn mẫu phù hợp với ngành nghề của bạn. Tất cả đều được tối ưu cho trải nghiệm người dùng tốt nhất.
-        </p>
-        
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-          gap: '2rem',
-          marginTop: '3rem'
-        }}>
-          <DemoCard title="Tiệm Cafe & Ăn Vặt" category="F&B" color="#D2691E" />
-          <DemoCard title="Dịch Vụ Sửa Chữa" category="Dịch Vụ" color="#005086" />
-          <DemoCard title="Shop Thời Trang" category="Bán Lẻ" color="#E91E63" />
-          <DemoCard title="Spa & Làm Đẹp" category="Làm Đẹp" color="#4CAF50" />
-          <DemoCard title="Bất Động Sản" category="Tư Vấn" color="#607D8B" />
-          <DemoCard title="Giới Thiệu Công Ty" category="Doanh Nghiệp" color="#3F51B5" />
+    <>
+      <section id="kho-giao-dien" className="section" style={{ backgroundColor: 'var(--bg-light)' }}>
+        <div className="container">
+          <h2 className="section-title">Kho Giao Diện Mẫu</h2>
+          <p className="section-subtitle">
+            Chọn mẫu phù hợp với ngành nghề của bạn. Tất cả đều được tối ưu cho trải nghiệm người dùng tốt nhất.
+          </p>
+          
+          {loading ? (
+            <div style={{ textAlign: 'center', padding: '3rem' }}>
+              <p>Đang tải templates...</p>
+            </div>
+          ) : (
+            <div style={{ 
+              display: 'grid', 
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
+              gap: '2rem',
+              marginTop: '3rem'
+            }}>
+              {templates.map((template) => (
+                <DemoCard 
+                  key={template.id} 
+                  template={template} 
+                  onViewDemo={setSelectedTemplate}
+                />
+              ))}
+            </div>
+          )}
+          
+          <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+            <button className="btn btn-outline">Xem tất cả kho giao diện</button>
+          </div>
         </div>
-        
-        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
-          <button className="btn btn-outline">Xem tất cả kho giao diện</button>
-        </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Preview Modal */}
+      {selectedTemplate && (
+        <PreviewModal 
+          theme={selectedTemplate} 
+          onClose={() => setSelectedTemplate(null)}
+        />
+      )}
+    </>
   );
 };
 

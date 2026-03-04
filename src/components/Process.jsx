@@ -31,55 +31,49 @@ const Step = ({ number, title, description }) => (
 
 const Process = () => {
   return (
-    <section className="section">
+    <section className="section" id="process">
       <div className="container">
         <div style={{ display: 'flex', flexDirection: 'column', lg: 'row', gap: '4rem', alignItems: 'center' }}>
           <div style={{ flex: 1 }}>
-            <h2 className="section-title" style={{ textAlign: 'left' }}>Quy trình triển khai đơn giản</h2>
+            <h2 className="section-title" style={{ textAlign: 'left' }}>Quy trình triển khai chuyên nghiệp</h2>
             <p style={{ marginBottom: '3rem', fontSize: '1.1rem', maxWidth: '500px' }}>
-              Chúng tôi tối giản hóa mọi bước để bạn có thể sở hữu website nhanh nhất mà không cần lo lắng về kỹ thuật.
+              Quy trình 6 bước rõ ràng, bạn nắm được từng giai đoạn. Như vậy cả hai bên đều an tâm được cập nhật tiến độ.
             </p>
             
             <div style={{ display: 'flex', flexDirection: 'column' }}>
               <Step 
                 number="1" 
-                title="Chọn giao diện & Gói dịch vụ" 
-                description="Lựa chọn mẫu website ưng ý từ kho giao diện và gói dịch vụ phù hợp với ngân sách." 
+                title="Bạn cung cấp thông tin" 
+                description="Gửi thông tin doanh nghiệp, hình ảnh, nội dung, yêu cầu đặc biệt của bạn cho chúng tôi." 
               />
               <Step 
                 number="2" 
-                title="Cung cấp thông tin" 
-                description="Gửi cho chúng tôi hình ảnh, nội dung giới thiệu và thông tin liên hệ của bạn." 
+                title="Chúng tôi xác nhận & báo giá" 
+                description="Xác nhận scope công việc, deadline, giá tiền. Gửi hợp đồng qua email để bạn xác nhận." 
               />
               <Step 
                 number="3" 
-                title="Bàn giao & Hướng dẫn" 
-                description="Sau 3-5 ngày, nhận website hoàn chỉnh và được hướng dẫn chi tiết cách sử dụng." 
+                title="Chúng tôi bắt đầu làm việc" 
+                description="Thiết kế & phát triển website theo yêu cầu. Duy trì liên lạc thường xuyên với bạn." 
+              />
+              <Step 
+                number="4" 
+                title="Gửi review & nhận feedback" 
+                description="Gửi website preview để bạn kiểm tra. Ghi nhận ý kiến sửa chữa từ bạn (nếu có)." 
+              />
+              <Step 
+                number="5" 
+                title="Sửa chữa & hoàn thiện" 
+                description="Thực hiện các sửa chữa theo feedback. Sau khi có góp ý, chúng tôi sửa và gửi lại." 
+              />
+              <Step 
+                number="6" 
+                title="Bàn giao & hoàn tất" 
+                description="Website hoàn thành. Bàn giao toàn bộ file, hướng dẫn sử dụng và hỗ trợ kỹ thuật." 
               />
             </div>
           </div>
-          
-          <div style={{ flex: 1, display: 'flex', justifyContent: 'center' }}>
-             {/* Simple visual representation of process */}
-             <div style={{ 
-               width: '100%', 
-               maxWidth: '450px',
-               height: '400px', 
-               backgroundColor: 'var(--bg-light)', 
-               borderRadius: '24px',
-               display: 'flex',
-               alignItems: 'center',
-               justifyContent: 'center',
-               border: '2px dashed var(--primary-color)'
-             }}>
-               <div style={{ textAlign: 'center', padding: '2rem' }}>
-                 <p style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--primary-color)' }}>
-                   Nhanh Chóng - Tiết Kiệm - Hiệu Quả
-                 </p>
-                 <p>Cam kết hỗ trợ trọn đời</p>
-               </div>
-             </div>
-          </div>
+
         </div>
       </div>
     </section>

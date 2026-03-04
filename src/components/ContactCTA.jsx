@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 
 const ContactCTA = () => {
   const [formState, setFormState] = useState({ name: '', phone: '', job: '' });
+  const [otherJob, setOtherJob] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const jobValue = formState.job === 'other' ? otherJob : formState.job;
+    console.log('Form submitted:', { ...formState, job: jobValue });
     alert('Cảm ơn bạn! Chúng tôi sẽ liên hệ lại sớm.');
   };
 
@@ -89,6 +92,23 @@ const ContactCTA = () => {
                 <option value="service">Dịch vụ (Sửa chữa, Làm đẹp...)</option>
                 <option value="other">Khác</option>
               </select>
+              
+              {formState.job === 'other' && (
+                <input 
+                  type="text" 
+                  placeholder="Vui lòng nhập mặt hàng kinh doanh của bạn" 
+                  required
+                  style={{
+                    padding: '1rem',
+                    borderRadius: '8px',
+                    border: '2px solid var(--primary-color)',
+                    fontSize: '1rem',
+                    animation: 'fadeIn 0.3s ease-in'
+                  }}
+                  value={otherJob}
+                  onChange={e => setOtherJob(e.target.value)}
+                />
+              )}
               
               <button type="submit" className="btn btn-primary" style={{ marginTop: '0.5rem', fontSize: '1.1rem' }}>
                 Gửi thông tin tư vấn
